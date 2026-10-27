@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
-<meta name="theme-color" content="#3d454d">
+<meta name="theme-color" content="#121212">
 <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAIAAADdvvtQAAADgUlEQVR4nO3dQXIdNRRA0W+KbYVZmIXFMmTIyhgkFQzGjvH9v6XXfc4K1E+3JJXtKj99+vzlBh/10+oFMJuASAREIiASAZEIiERAJAIiERCJgEgERCIgEgGRCIhEQCQCIhEQiYBIBEQiIBIBkQiIREAkAiIREImASAREIiASAZEIiERAJAIiERCJgEgERCIgEgGRCIhEQCQC+oE///h99RK2JqC3fK1HQ28Q0Kued6Oh1zz5VwcvvZbLL7/+dvBK9iegf/vhYSOj51xh//Ceq8p19pyA/vb+MjT0nYC++b9NaOgrAd1uH61BQzeP6B7Bxd/Ulw7ojkfIZTO67hV23wvostfZRQN6xH5fs6ErBvS4nb5gQ5cL6NF7fLWGLvSIPnJrr/OmvsoJdPDBcJ1z6BIn0MLtPP1RdP4TaO1hcPqj6OQB7bB/O6zhcc4c0D47t89K7u6cb6A9N+yU76ETnkB71nPbeGHF2QLafJM2X94HnOoKG7Q9p7nOznMCDarnNm21bzhJQBP3Y+KaXxp/hU3fhul32ewTaHo9t/mfMDig6aP/bvSHTL3CRg/9NROvs5En0Cnruc38rnkBTZzy+437uklX2Ljhftigu2zMCXSdem6jPnZGQIMGei9TPnlAQFNGeXcjPnz3N9CIIT7azk+irU8g9Xy18xw2PYF2Htkqe55DO55A6vlPe45lu4D2HNMmNhzOXgFtOKDd7DaijQLabTTb2mpQuzyitxrKFDs8q9cHJJ1ieUOLrzD1RMsHuDKg5R9/DmvHuCwg9dzRwmGuCUg9d7dqpAse0ep5qIOf1YcGJJ1jHNnQcVeYeg5z5KgPCkg9Bzts4Ot/kPiS2l6z/MeGL230uzAmEhCJgEgERCIgEgGRCIhEQCQCIhEQiYBIBEQiIBIBkQiIREAkAiIREMnPqxew0r3+QvTKf4PrBCIREImASAREIiASAZEIiERAJAIiERCJgEgERCIgEgGRCIhEQCQCIhEQiYBIBEQiIBIBkQiIREAkAiIREImASAREIiASAZEIiERAJAIiERCJgEgERCIgEgGRPH36/GX1GhjMCUQiIBIBkQiIREAkAiIREImASAREIiASAZEIiERAJAIiERCJgEgERCIgEgGRCIhEQCQCIhEQiYBIBEQiIBIBkQiIREAkAiIREImASAREIiASAZEIiERAJAIiERDJX/nM6blMwlkYAAAAAElFTkSuQmCC">
 <link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAADPklEQVR4nO3dQVYUMRSG0cLjtnSmM12sQ4euzAEeFQ4/3TTVyXvJvStIvXyk0sCBh09fvh3wkg+zF0Bd4iASB5E4iMRBJA4icRCJg0gcROIgEgeROIjEQSQOInEQiYNIHETiIBIHkTiIxEEkDiJxEImDSBxE4iASB5E4iMRBJA4icRCJg0gcROIgEgeROIjE8cSvnz9mL6EQcfzzWIY+/hLHH/83oY9H4jiOl2rQx3EcD5v/kdqLEXz++n3MSgra+uS45njY+QjZN47rd33bPjaN4637vWcfO8Zx205v2Md2cbxnj3frY6NPK2dt7T6fX3aJ4/Qv+h0S2eK1co/XwQ6vmPXjuN8uLt/H4nHce//W7mPlOMbs3MJ9rHkhHb9hS95PFzw5pnwpL3l+rHZyTN+klY6QpU6O6WUUWcNZ1omjzq7UWck7LRJHtf2otp7btL9zVN6G7veP3idH5TKO8su7qHEcLUbfYpFJ1zgaDb3RUp9peedoOu52V5B+J0fTMo6GK28WR7v5PtNr/W1eK73G+rou75ceJ8dKZRx9HqdBHF1G+SYtHqp6HC2GeJv6j1b6zlF/fKcoewWpe3JsUsZR+Ekrnhxlh3VXBc+PcifHnmUcJR+8VhwFBzRStccvFEe10UxRaghV4ig1lLnqjKLEhbTOOEqZfkWdHIcsXje3j5mvFWVcNHdE0+JQxpUmDmpOHMp4k1njmhCHMm4wZWij41DGzcaPbtynFVmcZdhHmEEnhzJONGyYI+JQxunGjPTucSjjTgYMtsS3zw8NPTX9G+ePqvzgjYLEQSQOInEQiYNIHETiIBIHkTiIxEEkDiJxEImDSBxE4iASB5E4iD7OXsA4Z/161T6/tObkIBIHkTiIxEEkDiJxEImDSBxE4iASB5E4iMRBJA4icRCJg0gcROIgEgeROIjEQSQOInEQiYNIHETiIBIHkTiIxEEkDiJxEImDSBxE4iASB5E4iMRBVOVfh1KQk4NIHETiIBIHkTiIxEEkDiJxEImDSBxE4iASB5E4iMRBJA4icRCJg0gcROIgEgeROIjEQSQOInEQiYNIHETiIBIHkTiIxEEkDiJxEImDSBxE4iASB9FvQTzexYWE4vIAAAAASUVORK5CYII=">
 <meta name="apple-mobile-web-app-capable" content="yes">
@@ -675,7 +675,300 @@ body{background-repeat:no-repeat;min-height:100vh}
 .sheet>a.big-call{justify-content:center;height:56px;font-size:17px;border-radius:18px;letter-spacing:.3px}
 .sheet>button.o:last-child{border:0;background:var(--soft);color:var(--mut);justify-content:center;height:46px}
 .sheet>div>b{color:var(--pri);font-size:18px}
+
+/* ===== THEME: CORAL + NAVY (مطابق للصور) ===== */
+:root,:root[data-theme="white"],:root[data-theme="cream"]{
+  --bg:#F6F6F6;--card:#FFFFFF;--tx:#1F2D3D;--mut:#6B7480;--bd:#E4E4E7;--soft:#F0F0F2;--tint:#FDEDEA;
+  --pri:#E64C3C;--pri2:#F27B6E;--onpri:#fff;--hd1:#E64C3C;--hd2:#F27B6E;
+  --navy:#1F2D3D;--navy2:#2A3B4F;
+  --gold:#E64C3C;--gold2:#FFD9D4;--price:#E64C3C;--ok:#2FA36B;--dng:#E64C3C;--warn:#E0A100;
+  --ttl:#E64C3C;--hbtn:#1F2D3D;
+  --sh:0 2px 8px rgba(31,45,61,.08);--sh-2:0 10px 30px rgba(31,45,61,.18);
+  --r:20px;--r-sm:16px;
+}
+:root[data-theme="black"],:root[data-theme="dark"]{
+  --bg:#121212;--card:#1E1E1E;--tx:#FFFFFF;--mut:#9A9A9F;--bd:#2E2E32;--soft:#1E1E1E;--tint:#1E1E1E;
+  --pri:#E64C3C;--pri2:#F27B6E;--onpri:#fff;--hd1:#E64C3C;--hd2:#F27B6E;
+  --navy:#1F2F40;--navy2:#2A3D52;
+  --gold:#E64C3C;--gold2:#FFB3AA;--price:#F27B6E;--ok:#58D49A;--dng:#FF7B6E;--warn:#FFB400;
+  --ttl:#E64C3C;--hbtn:#FFFFFF;
+  --sh:none;--sh-2:0 -8px 30px rgba(0,0,0,.5);
+}
+html,body{background:var(--bg)}
+body{background-image:none!important;font-family:"IBM Plex Sans Arabic","Readex Pro",system-ui,Tahoma,sans-serif}
+:root[data-theme="black"] body,:root[data-theme="dark"] body{background-image:none!important}
+
+/* الهيدر: شفاف بعنوان مرجاني وأزرار أيقونات بسيطة */
+header{background:var(--bg)!important;border-radius:0!important;box-shadow:none!important;border:0!important;padding:calc(env(safe-area-inset-top) + 14px) 18px 10px}
+header::before,header::after,.hero::before,.hero::after{display:none!important}
+header h1{font:700 24px "Readex Pro","IBM Plex Sans Arabic",sans-serif!important;color:var(--ttl)!important;-webkit-text-fill-color:var(--ttl)!important;background:none!important;filter:none!important}
+header>span{color:var(--ttl)}
+header button{background:transparent!important;border:0!important;color:var(--hbtn)!important;box-shadow:none;width:42px;height:42px}
+header button:active{background:color-mix(in srgb,var(--hbtn) 12%,transparent)!important}
+header .ico,header button .ico{color:var(--hbtn)!important;stroke:currentColor;width:24px;height:24px}
+.ico{filter:none!important}
+
+/* الكروت */
+.card,.grp,.stat,.money-card,.tile{background:var(--card);border:1px solid var(--bd)!important;border-radius:20px!important;box-shadow:var(--sh)!important}
+:root[data-theme="black"] .card,:root[data-theme="dark"] .card,:root[data-theme="black"] .offer:hover,:root[data-theme="dark"] .offer:hover{box-shadow:none!important}
+.menu .ico,.tile .ico{color:var(--pri)}
+.menu{border-radius:20px!important}
+
+/* البطاقة الرئيسية (hero) = بطاقة مرجانية متدرجة مثل بطاقة الحي */
+.hero{background:linear-gradient(110deg,#E64C3C 0%,#F27B6E 100%)!important;color:#fff!important;border:0!important;border-radius:26px!important;
+  box-shadow:0 10px 26px rgba(230,76,60,.28)!important}
+.hero .k{color:#fff!important;font:600 15px "IBM Plex Sans Arabic",sans-serif!important;opacity:.95}
+.hero .k::before{color:#fff}
+.hero .big{background:none!important;-webkit-text-fill-color:#fff!important;color:#fff!important;font-family:"Readex Pro",sans-serif!important;filter:none!important}
+.hs>div,.hs>div+div{background:rgba(255,255,255,.18)!important;border:0!important;box-shadow:none!important;border-radius:18px;filter:none!important}
+.hs>div:hover{background:rgba(255,255,255,.26)!important;transform:none}
+.hs b{-webkit-text-fill-color:#fff!important;color:#fff!important;background:none!important;filter:none!important;font-family:"Readex Pro",sans-serif!important}
+.hs span{color:#fff!important}
+
+/* بطاقات العقارات / الأحياء */
+.offer{background:var(--card)!important;border-radius:20px!important}
+.offer::before{background:var(--pri)!important}
+.offer::after{display:none}
+.offer.is-sold::before{background:var(--mut)!important}
+.offer .price{background:none!important;-webkit-text-fill-color:var(--price)!important;color:var(--price)!important;font-family:"Readex Pro",sans-serif!important}
+.offer b,.fhead h3,.sheet h2,.lock-screen h2,main>h2{font-family:"Readex Pro","IBM Plex Sans Arabic",sans-serif!important}
+.fhead h3,.sheet h2{background:none!important;-webkit-text-fill-color:var(--tx)!important;color:var(--tx)!important}
+main>h2{color:var(--tx);font-size:16px}
+main>h2::before{color:var(--pri)}
+main>h2::after{background:linear-gradient(90deg,var(--pri),transparent)}
+.av{background:linear-gradient(135deg,#E64C3C,#F27B6E)!important;color:#fff!important;box-shadow:none!important;border-radius:16px}
+.av::before{display:none}
+.av .ico{color:#fff!important}
+
+/* الوسوم */
+.tag{border-radius:99px}
+.tag.avail{color:var(--ok);background:color-mix(in srgb,var(--ok) 14%,transparent);border-color:color-mix(in srgb,var(--ok) 40%,transparent)}
+.tag.sold{color:var(--mut)}
+.tag.rent,.tag.rented{color:var(--pri2);background:color-mix(in srgb,var(--pri) 10%,transparent);border-color:color-mix(in srgb,var(--pri) 35%,transparent)}
+.tag.sale{color:var(--warn)}
+
+/* الأزرار */
+button.b,a.b{background:var(--pri)!important;color:#fff!important;border:0!important;border-radius:16px!important;box-shadow:none!important}
+button.b:active,a.b:active{filter:brightness(.92)}
+button.b .ico,a.b .ico,.ffoot .b .ico{color:#fff!important}
+button.o{background:transparent;color:var(--tx);border:1px solid var(--bd);border-radius:16px}
+button.o.d{color:var(--dng);border-color:var(--dng)}
+.sheet>button.o:last-child{background:transparent;border:1px solid var(--bd);color:var(--tx)}
+
+/* زر الإضافة العائم: كحلي مثل الصور */
+button.b.fab{background:var(--navy)!important;color:#fff!important;border:0!important;
+  width:auto;height:56px;padding:0 20px;border-radius:20px!important;
+  box-shadow:0 8px 20px rgba(0,0,0,.28)!important;display:inline-flex;align-items:center;gap:10px;
+  inset-inline-end:auto;inset-inline-start:18px;font:500 16px "IBM Plex Sans Arabic",sans-serif}
+button.b.fab .ico{color:#fff!important;width:24px;height:24px}
+
+/* الشريط السفلي والتبويبات */
+.bottom-nav{background:var(--card)!important;border:1px solid var(--bd)!important;border-radius:26px!important;box-shadow:none!important;left:12px;right:12px}
+.bottom-nav button{color:var(--mut)}
+.bottom-nav button .ico{color:var(--mut)!important}
+.bottom-nav button.active{background:color-mix(in srgb,var(--pri) 14%,transparent)!important;color:var(--pri)!important;box-shadow:none!important;border:0!important}
+.bottom-nav button.active .ico{color:var(--pri)!important}
+.bottom-nav button.active::after{background:var(--pri)!important}
+
+/* الحقول: إطار رفيع وزوايا دائرية */
+input,textarea,select{background:transparent!important;border:1px solid var(--bd)!important;border-radius:20px!important;color:var(--tx)}
+input:focus,textarea:focus,select:focus{border-color:var(--pri)!important;box-shadow:none!important}
+input::placeholder,textarea::placeholder{color:var(--mut)}
+.grp{background:transparent!important;border:0!important;box-shadow:none!important;overflow:visible;display:grid;gap:12px}
+.grp.two{grid-template-columns:1fr 1fr}
+.fld,.grp .fld{background:transparent;border:1px solid var(--bd)!important;border-radius:20px;padding:10px 18px}
+.grp.two .fld+.fld{border-inline-start:1px solid var(--bd)!important}
+.fld::after{display:none}
+.fld:focus-within{background:transparent!important;border-color:var(--pri)!important}
+.fld>span:first-child,.unit em,.hint{color:var(--mut)!important}
+.fld:focus-within>span:first-child{color:var(--pri)!important}
+.fld input,.fld select,.fld textarea{border:0!important;border-radius:0!important;color:var(--tx)}
+.drop{border:1px solid var(--bd)!important;background:transparent!important;border-radius:20px;flex-direction:column;justify-content:center;text-align:center;min-height:150px;color:var(--tx)}
+.drop .ico{color:var(--tx)!important}
+
+/* النوافذ السفلية */
+.ov{background:rgba(0,0,0,.6);backdrop-filter:none}
+.sheet,.sheet.form{background:var(--card)!important;border-radius:28px 28px 0 0!important}
+:root[data-theme="black"] .sheet,:root[data-theme="dark"] .sheet,:root[data-theme="black"] .sheet.form,:root[data-theme="dark"] .sheet.form{background:#1C1C1C!important}
+.sheet::before{background:#C9C9D0;width:44px}
+.sheet h2 .ico,.fhead .x{color:var(--tx)}
+.fhead .x{background:transparent}
+.ffoot{background:var(--card);border-top:0}
+:root[data-theme="black"] .ffoot,:root[data-theme="dark"] .ffoot{background:#1C1C1C}
+.ffoot .b{border-radius:18px!important}
+.ffoot .o{color:var(--tx);border:1px solid var(--bd);padding:0 18px}
+.sheet>.acts button{border-radius:18px}
+
+/* التنبيهات */
+.warn-bar{color:var(--warn);background:color-mix(in srgb,var(--warn) 10%,transparent);border-color:color-mix(in srgb,var(--warn) 40%,transparent)}
+.reminder{color:var(--dng);background:color-mix(in srgb,var(--dng) 9%,transparent);border-color:color-mix(in srgb,var(--dng) 35%,transparent)}
+
+/* الحالة الفارغة */
+.empty{color:var(--tx)}
+.empty .ico{color:var(--mut)!important;opacity:.7}
+
+/* التبديل بين الأنماط */
+.theme-toggle .seg{background:transparent;border:1px solid var(--bd);border-radius:16px}
+.theme-toggle .seg button.on{background:var(--pri);color:#fff}
+.theme-toggle .seg button.on .ico{color:#fff!important}
+
+/* شاشة القفل */
+.lock-screen{background:var(--bg)}
+.lock-screen .logo{background:linear-gradient(135deg,#E64C3C,#F27B6E)!important;color:#fff;box-shadow:none!important}
+.lock-screen .logo::before{display:none}
+.lock-screen .logo .ico{color:#fff!important}
+.pin-dot{border-color:var(--pri)}.pin-dot.filled{background:var(--pri)}
+.pin-pad button{background:var(--card);border:1px solid var(--bd);color:var(--tx)}
+.pin-pad .ok{background:var(--pri)!important;border-color:var(--pri)}
+.pin-pad .del{color:var(--dng)}
+
+@media(min-width:900px){
+  .bottom-nav{border-radius:0!important;left:auto;right:0}
+  .bottom-nav::before{background:none!important;-webkit-text-fill-color:var(--pri)!important;color:var(--pri);font-family:"Readex Pro",sans-serif}
+  button.b.fab{inset-inline-start:auto;inset-inline-end:36px}
+}
+
+/* ===== LAYOUT: مطابق للصور ===== */
+body{padding-bottom:calc(env(safe-area-inset-bottom) + 100px)}
+header{display:flex;align-items:center;gap:4px}
+header h1{flex:1;margin:0}
+header.sub h1{color:var(--tx)!important;-webkit-text-fill-color:var(--tx)!important;font-size:21px}
+header .hb{margin-inline-end:4px}
+main{max-width:680px}
+button.b.fab{inset-inline-start:auto!important;inset-inline-end:18px!important;bottom:calc(env(safe-area-inset-bottom) + 20px)!important}
+button.b.fab span{font-size:16px}
+.sbox{display:flex;align-items:center;gap:12px;height:62px;padding:0 18px;border:1px solid var(--bd);border-radius:22px;background:transparent}
+.sbox .ico{color:var(--mut)!important;width:26px;height:26px}
+.sbox input{flex:1;border:0!important;background:transparent!important;padding:0!important;font-size:17px;height:100%;border-radius:0!important}
+.hlist{display:grid;gap:14px}
+.hcard{display:flex;align-items:center;gap:14px;padding:22px 18px;border-radius:26px;color:#fff;cursor:pointer;
+  background:linear-gradient(110deg,#E64C3C 0%,#F27B6E 100%);box-shadow:0 10px 24px rgba(230,76,60,.28);transition:transform .12s}
+.hcard:active{transform:scale(.985)}
+.hcard .hi{display:grid;place-items:center;width:52px;height:52px;flex-shrink:0}
+.hcard .hi .ico{width:46px;height:46px;stroke-width:1.9}
+.hcard .ico{color:#fff!important}
+.hcard .ht{flex:1;display:grid;gap:2px;min-width:0}
+.hcard .ht b{font:700 24px/1.2 "Readex Pro","IBM Plex Sans Arabic",sans-serif;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.hcard .ht span{opacity:.88;font-size:17px}
+.hcard .chev{width:26px;height:26px}
+.tabs{display:grid;grid-template-columns:1fr 1fr;border-bottom:1px solid var(--bd);margin:4px 0 0;background:var(--bg)}
+.tabs button{background:none;border:0;border-bottom:3px solid transparent;margin-bottom:-1px;color:var(--mut);font:500 18px "IBM Plex Sans Arabic",sans-serif;
+  padding:14px 8px;display:flex;align-items:center;justify-content:center;gap:10px;cursor:pointer}
+.tabs button .ico{width:28px;height:28px;color:var(--mut)!important}
+.tabs button.on{color:var(--pri);border-bottom-color:var(--pri)}
+.tabs button.on .ico{color:var(--pri)!important}
+.empty-big{display:grid;justify-items:center;text-align:center;gap:12px;padding:90px 16px 10px}
+.empty-big .ico{width:120px;height:120px;color:var(--bd)!important;stroke-width:1.6;margin-bottom:20px}
+:root[data-theme="white"] .empty-big .ico{color:#D3D3D8!important}
+.empty-big h3{margin:0;font:700 26px "Readex Pro","IBM Plex Sans Arabic",sans-serif}
+.empty-big p{margin:0;color:var(--tx);font-size:18px}
+button.b.big{height:62px;padding:0 44px;font-size:20px;border-radius:20px!important;margin-top:18px}
+.empty-doc{display:grid;justify-items:center;text-align:center;gap:14px;padding:110px 10px}
+.empty-doc .ico{width:96px;height:96px;color:#C9C9CE!important;stroke-width:1.6}
+.empty-doc p{margin:0;font-size:20px;color:var(--tx)}
+.sheet h2.hf{font-size:26px;margin:6px 0 10px}
+.sheet h2.sh{font-size:22px;padding-bottom:16px;border-bottom:1px solid var(--bd);margin-bottom:0}
+.sheet h2.sh .ico{width:26px;height:26px;color:var(--tx)}
+.acts2{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:6px}
+.acts2 button{justify-content:center;height:56px;font-size:18px;border-radius:18px!important}
+.opts{display:grid}
+.opt{display:flex;align-items:center;width:100%;background:none;border:0;color:var(--tx);font:500 20px "IBM Plex Sans Arabic",sans-serif;padding:20px 6px;cursor:pointer;text-align:start}
+.opt i{margin-inline-start:auto;width:28px;height:28px;border-radius:50%;border:2.5px solid #CFCFD6;flex-shrink:0}
+.opt.on i{border-color:var(--pri);background:var(--pri);box-shadow:inset 0 0 0 5px var(--card)}
+:root[data-theme="black"] .opt.on i{box-shadow:inset 0 0 0 5px #1C1C1C}
+/* نموذج العقار بصفحة كاملة */
+.ov:has(.sheet.pageform){align-items:stretch;padding:0;background:var(--bg);backdrop-filter:none}
+.sheet.pageform{max-width:none;width:100%;height:100dvh;max-height:100dvh;margin:0;border-radius:0!important;animation:pg .22s both}
+:root[data-theme] .sheet.form.pageform{background:var(--bg)!important}
+.sheet.pageform::before{display:none}
+.fhead.pg{padding:calc(env(safe-area-inset-top) + 14px) 14px 10px;gap:10px}
+.fhead.pg h3{font:700 22px "Readex Pro","IBM Plex Sans Arabic",sans-serif!important;-webkit-text-fill-color:var(--tx)!important;color:var(--tx)!important;background:none!important}
+.fhead.pg .x{margin:0;background:transparent;color:var(--tx);width:44px;height:44px}
+.fhead.pg .x .ico{color:var(--tx)!important;width:26px;height:26px}
+.sheet.pageform .fbody{padding:14px 18px 24px;gap:14px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.fld{padding:12px 20px 12px}
+.fld.ta textarea{min-height:110px}
+.fld input,.fld textarea,.fld select{font-size:18px}
+:root[data-theme] .sheet.pageform .ffoot{background:var(--bg)!important;border-top:0}
+.ffoot.one{grid-template-columns:1fr;padding:12px 18px calc(env(safe-area-inset-bottom) + 16px)}
+.ffoot.one .b{height:62px;font-size:20px;border-radius:20px!important}
+/* الإعدادات */
+h2.sec{font:600 18px "IBM Plex Sans Arabic",sans-serif!important;color:var(--tx)!important;margin:14px 4px 0!important}
+main>h2.sec::before,main>h2.sec::after{display:none!important}
+.bk{display:grid;gap:12px}
+.bkh{display:flex;align-items:center;gap:10px;color:var(--warn);font-weight:600;padding-bottom:12px;border-bottom:1px solid var(--bd)}
+.bkh .ico{color:var(--warn)!important;width:26px;height:26px}
+.bkh.good,.bkh.good .ico{color:var(--ok)!important}
+.setrow{display:flex;align-items:center;gap:14px;padding:18px 18px}
+.setrow .ico{color:var(--pri)!important;width:26px;height:26px}
+.setrow b{font-size:18px}
+.sw{position:relative;width:56px;height:32px;border-radius:99px;border:0;background:var(--bd);padding:0;cursor:pointer;margin-inline-start:auto;flex-shrink:0;transition:background .2s}
+.sw i{position:absolute;top:4px;inset-inline-start:4px;width:24px;height:24px;border-radius:50%;background:#fff;transition:inset-inline-start .2s,background .2s}
+.sw.on{background:color-mix(in srgb,var(--pri) 45%,#000)}
+.sw.on i{inset-inline-start:28px;background:var(--pri)}
+.menu{padding:18px 18px}
+@media(min-width:900px){
+  main{max-width:760px}
+  .sheet.pageform{max-width:720px;height:auto;max-height:92vh;border-radius:28px!important;margin:auto}
+  .ov:has(.sheet.pageform){align-items:center;padding:20px;background:rgba(0,0,0,.6)}
+  button.b.fab{inset-inline-end:36px!important;bottom:32px!important}
+  header,main{margin-inline:auto}
+}
+
+/* ===== سلاسة إضافية (Smooth Pro) ===== */
+:root{--ease:cubic-bezier(.22,.8,.24,1);--ease-spring:cubic-bezier(.2,.9,.25,1.12)}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-rendering:optimizeLegibility}
+body{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+header,.bottom-nav,button.b.fab,.sheet,main{backface-visibility:hidden;-webkit-backface-visibility:hidden}
+header{will-change:padding,box-shadow}
+.bottom-nav button{transition:background .25s var(--ease),color .25s var(--ease),transform .15s var(--ease)}
+.bottom-nav button:active{transform:scale(.92)}
+.bottom-nav button svg{transition:transform .3s var(--ease-spring)}
+.bottom-nav button.active svg{transform:translateY(-1px) scale(1.12)}
+.card{transition:transform .18s var(--ease),box-shadow .25s var(--ease),background .25s,border-color .25s}
+@media(hover:hover){.tap:hover{box-shadow:var(--sh-2);transform:translateY(-1px)}}
+.tap:active{transform:scale(.982);transition-duration:.08s}
+button,.tag,.opt,.sw,.sw i,input,textarea,select{transition-timing-function:var(--ease)}
+input,textarea,select{transition:border-color .2s,background .2s,box-shadow .2s}
+input:focus,textarea:focus,select:focus{box-shadow:0 0 0 3px color-mix(in srgb,var(--pri) 18%,transparent)}
+img{transition:opacity .35s var(--ease)}
+img.pre{opacity:0}
+.ov{animation-duration:.22s;animation-timing-function:var(--ease)}
+.sheet{overscroll-behavior:contain;-webkit-overflow-scrolling:touch;will-change:transform}
+.fbody,.opts,.thumbs{overscroll-behavior:contain;-webkit-overflow-scrolling:touch;scroll-behavior:smooth}
+.thumbs{scroll-snap-type:x proximity}
+.thumbs>*{scroll-snap-align:start}
+main.in-l,main.in-r{will-change:transform,opacity;animation-duration:.3s;animation-timing-function:var(--ease)}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
+<script>
+/* وجه العرض: auto | phone | laptop */
+(function () {
+  var v = 'auto';
+  try { v = localStorage.getItem('daftar.view') || 'auto'; } catch (e) {}
+  window.__view = v;
+  if (v === 'laptop' && Math.min(screen.width, innerWidth) < 900) {
+    var m = document.querySelector('meta[name=viewport]');
+    if (m) m.setAttribute('content', 'width=1100, viewport-fit=cover');
+  }
+  if (v === 'phone') {
+    try {
+      Array.prototype.forEach.call(document.styleSheets, function (sh) {
+        var r; try { r = sh.cssRules; } catch (e) { return; }
+        for (var i = r.length - 1; i >= 0; i--)
+          if (r[i].type === 4 && /min-width/.test(r[i].conditionText || r[i].media.mediaText)) sh.deleteRule(i);
+      });
+    } catch (e) {}
+    var st = document.createElement('style');
+    st.textContent = 'html{background:var(--soft)}body{max-width:480px;margin-inline:auto;background:var(--bg);min-height:100vh;box-shadow:0 0 0 1px var(--bd),0 0 40px rgba(0,0,0,.08)}'
+      + 'header{max-width:480px;margin-inline:auto}.bottom-nav{max-width:480px;margin-inline:auto}'
+      + 'button.b.fab{inset-inline-end:max(18px,calc(50% - 222px))!important}.sheet{max-width:480px}';
+    document.head.appendChild(st);
+  }
+})();
+</script>
+
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Readex+Pro:wght@500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 </head>
@@ -704,7 +997,7 @@ function applyTheme() {
   root.setAttribute('data-theme', mode);
   root.style.colorScheme = mode === 'black' ? 'dark' : 'light';
   const meta = document.querySelector('meta[name="theme-color"]');
-  if (meta) meta.content = mode === 'black' ? '#242424' : '#3d454d';
+  if (meta) meta.content = mode === 'black' ? '#121212' : '#F6F6F6';
 }
 function setTheme(mode) {
   if (!['black', 'white', 'auto'].includes(mode)) mode = 'white';
@@ -854,24 +1147,35 @@ Object.assign(ICO, {
   folder: '<svg class="ico" viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>'
 });
 
+Object.assign(ICO, {
+  fwd: '<svg class="ico" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>',
+  sort: '<svg class="ico" viewBox="0 0 24 24"><path d="M4 7h16M7 12h10M10 17h4"/></svg>',
+  filter: '<svg class="ico" viewBox="0 0 24 24"><path d="M5 4h14a1 1 0 0 1 .7 1.7L14 11.5V19l-4 2v-9.5L4.3 5.7A1 1 0 0 1 5 4z"/></svg>',
+  avail: '<svg class="ico" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="4"/><path d="M7.5 9l1.3 1.3L11 8M13.5 9.5H17M7.5 15l1.3 1.3L11 14M13.5 15.5H17"/></svg>',
+  soldic: '<svg class="ico" viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4z"/><path d="M9.5 9.5l2 2 3.2-3.7"/></svg>',
+  doc: '<svg class="ico" viewBox="0 0 24 24"><path d="M5 5a2 2 0 0 1 2-2h5v5a2 2 0 0 0 2 2h5v9a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2z" style="display:none"/><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><path d="M14 3.5v3a2 2 0 0 0 2 2h4.5M7.5 14h4M7.5 17h6"/></svg>',
+  bld: '<svg class="ico" viewBox="0 0 24 24"><path d="M4 20V9a2 2 0 0 1 2-2h2V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v11"/><rect x="9" y="9" width="6" height="11" rx="2"/><path d="M11 13h2M11 16h2"/></svg>',
+  warn: '<svg class="ico" viewBox="0 0 24 24"><path d="M12 3l9.5 17h-19z"/><path d="M12 10v4M12 17.2v.1"/></svg>',
+  info: '<svg class="ico" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 7.8v.1"/></svg>'
+});
+
 /* ===== التنقل ===== */
 function go(h) { location.hash = h; }
 window.addEventListener('hashchange', render);
 
-function page(title, body, fab, back, showNav = true) {
-  const curTheme = localStorage.getItem(THEME_KEY) || 'auto';
-  const themeIcon = curTheme === 'black' ? ICO.moon : curTheme === 'auto' ? ICO.auto : ICO.sun;
-  const themeLabel = ({ black: 'داكن', white: 'فاتح', auto: 'تلقائي' })[curTheme] || 'تلقائي';
+function page(title, body, fab, back, showNav, opts) {
+  opts = opts || {};
+  const lead = back ? `<button class="hb" onclick="goUp()" aria-label="رجوع">${ICO.fwd}</button>` : '';
+  const fl = fab ? (String(fab).indexOf('hoodForm') === 0 ? 'إضافة حي' : 'إضافة عقار') : '';
   $('app').innerHTML =
-    `<header>
-      ${back ? `<button onclick="goBack()" aria-label="رجوع">${ICO.back2}</button>` : `<span>${ICO.build}</span>`}
-      <h1>${esc(title)}</h1>
-      <button onclick="toggleTheme()" aria-label="تبديل النمط (${themeLabel})" title="${themeLabel}">${themeIcon}</button>
+    `<header class="${back ? 'sub' : 'top'}">
+      ${lead}<h1>${esc(title)}</h1>${opts.acts || ''}
     </header>
+    ${opts.tabs || ''}
     <main>${body}</main>
-    ${fab ? `<button class="b fab" onclick="${fab}" aria-label="إضافة">${ICO.plus}</button>` : ''}
-    ${showNav ? bottomNav() : ''}`;
+    ${fab ? `<button class="b fab" onclick="${fab}" aria-label="${fl}">${ICO.plus}<span>${fl}</span></button>` : ''}`;
 }
+function goUp() { backNav = true; location.hash = ''; }
 function toggleTheme() {
   const cur = localStorage.getItem(THEME_KEY) || 'auto';
   setTheme(document.documentElement.getAttribute('data-theme') === 'black' ? 'white' : 'black');
@@ -1013,59 +1317,69 @@ function propCard(p) {
 }
 function addProp() { if (!db.hoods.length) return hoodForm(0); propForm(0); }
 
-/* ===== الرئيسية ===== */
+/* ===== الرئيسية = الأحياء ===== */
+let HT = 'AVAILABLE', HF = { size: 0, sort: 'new' }, hoodSeen = 0;
+const SORTS = [['new', 'الأحدث أولاً'], ['low', 'السعر: من الأقل للأعلى'], ['high', 'السعر: من الأعلى للأقل'], ['size', 'المساحة: من الأكبر للأصغر']];
 function homeView() {
-  const n = s => db.props.filter(p => p.status === s).length;
-  const worth = db.props.filter(p => p.status === 'AVAILABLE').reduce((t, p) => t + p.price, 0);
-  const recent = [...db.props].sort((a, b) => b.id - a.id).slice(0, 5);
+  hoodSeen = 0;
   const days = db.lastBackup ? Math.floor((Date.now() - db.lastBackup) / 864e5) : null;
   const warn = (days === null || days > 7) && db.props.length
     ? `<div class="card tap" style="border-color:var(--warn)" tabindex="0" onclick="go('settings')">${days === null ? 'ما سويت نسخة احتياطية للبيانات بعد.' : 'آخر نسخة احتياطية قبل ' + days + ' يوم.'} اضغط للتصدير.</div>` : '';
-  const empty = db.hoods.length
-    ? '<div class="empty">ما أكو عقارات بعد. اضغط + حتى تضيف أول عقار.</div>'
-    : `<div class="empty">${ICO.folder}<div>ابدأ بإضافة حي، وبعدها سجّل عقاراتك داخله.</div><br><button class="b" onclick="hoodForm(0)">${ICO.plus} إضافة حي</button></div>`;
-  page('دفتر عقاراتي', `
-    ${warn}
-    <section class="hero">
-      <span class="k">ملخص دفترك</span>
-      <div class="hs">
-        <div role="button" tabindex="0" onclick="go('all/AVAILABLE')"><b>${n('AVAILABLE')}</b><span>متاح</span></div>
-        <div role="button" tabindex="0" onclick="go('all/SOLD')"><b>${n('SOLD')}</b><span>مباع</span></div>
-        <div role="button" tabindex="0" onclick="go('hoods')"><b>${db.hoods.length}</b><span>حي</span></div>
-      </div>
-    </section>
-    <h2>آخر العقارات</h2>
-    ${recent.length ? recent.map(propCard).join('') : empty}
-  `, 'addProp()', false);
-}
-
-/* ===== الأحياء ===== */
-function hoodsView() {
-  page('الأحياء', `<input id="hq" type="search" placeholder="ابحث عن حي" oninput="fillHoods()"><div id="hl" style="display:grid;gap:10px"></div>`, 'hoodForm(0)');
+  page('دفتر عقاراتي', `${warn}
+    <div class="sbox">${ICO.search}<input id="hq" type="search" placeholder="البحث" oninput="fillHoods()"></div>
+    <div id="hl" class="hlist"></div>`,
+    db.hoods.length ? 'hoodForm(0)' : '', false, false,
+    { acts: `<button onclick="go('all')" aria-label="كل العقارات">${ICO.list}</button><button onclick="go('settings')" aria-label="الإعدادات">${ICO.settings}</button>` });
   fillHoods();
 }
+function hoodsView() { homeView(); }
 function fillHoods() {
   const q = ($('hq') ? $('hq').value : '').trim().toLowerCase();
   const chev = ICO.back2.replace('class="ico"', 'class="ico chev"');
   const list = db.hoods.filter(h => !q || h.name.toLowerCase().includes(q)).sort((a, b) => a.name.localeCompare(b.name, 'ar'));
+  if (!db.hoods.length) {
+    $('hl').innerHTML = `<div class="empty-big">${ICO.bld}<h3>لا توجد أحياء مضافة بعد</h3><p>ابدأ بإضافة أول حي لتنظيم عقاراتك.</p><button class="b big" onclick="hoodForm(0)">إضافة حي جديد</button></div>`;
+    return;
+  }
   $('hl').innerHTML = list.map(h => {
-    const ps = db.props.filter(p => p.hood === h.id), av = ps.filter(p => p.status === 'AVAILABLE').length;
-    return `<div class="card tap menu" tabindex="0" onclick="go('hood/${h.id}')" onkeydown="if(event.key==='Enter')go('hood/${h.id}')"><span class="av">${esc(h.name.trim().charAt(0))}</span><div>${esc(h.name)}<div class="mut" style="font-weight:400">${ps.length} عقار • ${av} متاح</div></div>${chev}</div>`;
-  }).join('') || `<div class="empty">${db.hoods.length ? 'ما أكو نتائج.' : 'ما أكو أحياء بعد. اضغط + حتى تضيف أول حي.'}</div>`;
+    const av = db.props.filter(p => p.hood === h.id && p.status === 'AVAILABLE').length;
+    return `<div class="hcard tap" tabindex="0" onclick="go('hood/${h.id}')" onkeydown="if(event.key==='Enter')go('hood/${h.id}')"><span class="hi">${ICO.bld}</span><div class="ht"><b>${esc(h.name)}</b><span>${av} عقار متاح</span></div>${chev}</div>`;
+  }).join('') || `<div class="empty">لا توجد نتائج.</div>`;
 }
 function hoodView(id) {
   const h = hood(id);
-  if (!h) { go('hoods'); return; }
-  const ps = db.props.filter(p => p.hood === id).sort((a, b) => b.id - a.id);
-  page(h.name, `
-    <div class="acts"><button class="o" onclick="hoodForm(${id})">${ICO.edit} تعديل الحي</button><button class="o d" onclick="delHood(${id})">${ICO.trash} حذف الحي</button></div>
-    ${ps.length ? ps.map(propCard).join('') : '<div class="empty">ما أكو عقارات بهذا الحي. اضغط + حتى تضيف عقار.</div>'}`, `propForm(0,${id})`, true);
+  if (!h) { go(''); return; }
+  if (hoodSeen !== id) { hoodSeen = id; HT = 'AVAILABLE'; HF = { size: 0, sort: 'new' }; }
+  const tab = (st, label, ic) => `<button class="${HT === st ? 'on' : ''}" onclick="setHT('${st}',${id})">${ic}<span>${label}</span></button>`;
+  page(h.name, `<div id="hp" class="hlist"></div>
+    <div class="acts"><button class="o" onclick="hoodForm(${id})">${ICO.edit} تعديل الحي</button><button class="o d" onclick="delHood(${id})">${ICO.trash} حذف الحي</button></div>`,
+    `propForm(0,${id})`, true, false,
+    { acts: `<button onclick="filterSheet(${id})" aria-label="تصفية حسب المساحة">${ICO.filter}</button><button onclick="sortSheet(${id})" aria-label="الفرز">${ICO.sort}</button>`,
+      tabs: `<div class="tabs">${tab('AVAILABLE', 'عقارات متاحة', ICO.avail)}${tab('SOLD', 'عقارات مباعة', ICO.soldic)}</div>` });
+  fillHood(id);
 }
+function setHT(st, id) { HT = st; hoodView(id); }
+function fillHood(id) {
+  let ps = db.props.filter(p => p.hood === id && p.status === HT);
+  if (HF.size) ps = ps.filter(p => Number(p.size) === HF.size);
+  ps.sort((a, b) => HF.sort === 'low' ? a.price - b.price : HF.sort === 'high' ? b.price - a.price : HF.sort === 'size' ? b.size - a.size : b.id - a.id);
+  $('hp').innerHTML = ps.length ? ps.map(propCard).join('') : `<div class="empty-doc">${ICO.doc}<p>لا توجد عقارات تطابق خياراتك</p></div>`;
+}
+function sortSheet(id) {
+  modal(`<h2 class="sh">${ICO.sort} الفرز حسب</h2><div class="opts">${SORTS.map(([v, t]) => `<button class="opt ${HF.sort === v ? 'on' : ''}" onclick="HF.sort='${v}';closeModal();fillHood(${id})"><span>${t}</span><i></i></button>`).join('')}</div>`);
+}
+function filterSheet(id) {
+  const sizes = [...new Set([300, 250, 200, 150, 100, 50, ...db.props.filter(p => p.hood === id && p.size > 0).map(p => Number(p.size))])].sort((a, b) => b - a);
+  modal(`<h2 class="sh">${ICO.filter} تصفية حسب المساحة</h2><div class="opts">
+    <button class="opt ${!HF.size ? 'on' : ''}" onclick="HF.size=0;closeModal();fillHood(${id})"><span>الكل</span><i></i></button>
+    ${sizes.map(n => `<button class="opt ${HF.size === n ? 'on' : ''}" onclick="HF.size=${n};closeModal();fillHood(${id})"><span>${money(n)} م²</span><i></i></button>`).join('')}</div>`);
+}
+
 function hoodForm(id) {
   const h = id ? hood(id) : { name: '' };
-  modal(`${fHead(ICO.folder, id ? 'تعديل حي' : 'حي جديد', 'الأحياء تنظّم عقاراتك')}
-    <div class="fbody"><div class="grp"><label class="fld"><span>اسم الحي</span><input id="hn" value="${esc(h.name)}" placeholder="مثال: الزهراء"></label></div></div>
-    ${fFoot('saveHood(' + id + ')')}`, 'form');
+  modal(`<h2 class="hf">${id ? 'تعديل الحي' : 'إضافة حي جديد'}</h2>
+    <input id="hn" value="${esc(h.name)}" placeholder="اسم الحي">
+    <div class="acts2"><button class="o" onclick="closeModal()">إلغاء</button><button class="b" onclick="saveHood(${id})">${id ? 'حفظ' : 'إضافة'}</button></div>`);
   $('hn').focus();
 }
 function saveHood(id) {
@@ -1101,7 +1415,7 @@ function allView() {
       <input type="number" inputmode="decimal" placeholder="السعر من" value="${esc(F.min)}" oninput="F.min=this.value;fillAll()">
       <input type="number" inputmode="decimal" placeholder="السعر إلى" value="${esc(F.max)}" oninput="F.max=this.value;fillAll()">
     </div>
-    <div id="res" style="display:grid;gap:10px"></div>`, 'addProp()');
+    <div id="res" style="display:grid;gap:10px"></div>`, 'addProp()', true);
   fillAll();
 }
 function fillAll() {
@@ -1125,23 +1439,22 @@ function priceHint() {
 function propForm(id, hid) {
   if (!db.hoods.length) return hoodForm(0);
   const p = id ? prop(id) : { hood: hid || db.hoods[0].id, plot: '', size: '', price: '', owner: '', phone: '', notes: '' };
-  modal(`${fHead(ICO.build, id ? 'تعديل عقار' : 'عقار جديد', id ? esc(ptitle(p)) : 'سجّل تفاصيل القطعة')}
+  const hoodField = (hid && !id)
+    ? `<input type="hidden" id="pk" value="${hid}">`
+    : `<label class="fld sel"><span>الحي</span><select id="pk">${db.hoods.map(h => `<option value="${h.id}"${h.id === p.hood ? ' selected' : ''}>${esc(h.name)}</option>`).join('')}</select></label>`;
+  modal(`<div class="fhead pg"><button class="x" type="button" onclick="closeModal()" aria-label="رجوع">${ICO.fwd}</button><h3>${id ? 'تعديل العقار' : 'إضافة عقار جديد'}</h3></div>
     <div class="fbody">
-      <div class="grp">
-        <label class="fld sel"><span>الحي</span><select id="pk">${db.hoods.map(h => `<option value="${h.id}"${h.id === p.hood ? ' selected' : ''}>${esc(h.name)}</option>`).join('')}</select></label>
-        <label class="fld"><span>رقم القطعة</span><input id="pn" value="${esc(p.plot)}" placeholder="مثال: 12/345"></label>
+      ${hoodField}
+      <label class="fld"><span>رقم القطعة *</span><input id="pn" value="${esc(p.plot)}"></label>
+      <label class="fld"><span>اسم المالك</span><input id="po" value="${esc(p.owner)}"></label>
+      <label class="fld"><span>رقم الهاتف</span><input id="ph" type="tel" value="${esc(p.phone)}"></label>
+      <div class="row2">
+        <label class="fld"><span>المساحة (م²)</span><input id="ps" type="number" inputmode="decimal" value="${esc(p.size || '')}"></label>
+        <label class="fld"><span>السعر</span><input id="pp" type="number" inputmode="decimal" value="${esc(p.price || '')}" oninput="priceHint()"><small class="hint" id="phint"></small></label>
       </div>
-      <div class="grp two">
-        <label class="fld"><span>المساحة</span><div class="unit"><input id="ps" type="number" inputmode="decimal" value="${esc(p.size || '')}" placeholder="200"><em>م²</em></div><small class="hint"></small></label>
-        <label class="fld"><span>السعر</span><div class="unit"><input id="pp" type="number" inputmode="decimal" value="${esc(p.price || '')}" placeholder="0" oninput="priceHint()"><em>د.ع</em></div><small class="hint" id="phint"></small></label>
-      </div>
-      <div class="grp">
-        <label class="fld"><span>اسم المالك</span><input id="po" value="${esc(p.owner)}" placeholder="الاسم الكامل"></label>
-        <label class="fld"><span>هاتف المالك</span><input id="ph" type="tel" value="${esc(p.phone)}" placeholder="07XX XXX XXXX"></label>
-      </div>
-      <div class="grp"><label class="fld"><span>ملاحظات</span><textarea id="pd" rows="2" placeholder="أي تفاصيل تهمك عن العقار">${esc(p.notes)}</textarea></label></div>
+      <label class="fld ta"><span>ملاحظات إضافية</span><textarea id="pd" rows="4">${esc(p.notes)}</textarea></label>
     </div>
-    ${fFoot('saveProp(' + id + ')')}`, 'form');
+    <div class="ffoot one"><button class="b" onclick="saveProp(${id})">حفظ المعلومات</button></div>`, 'form pageform');
   priceHint();
 }
 
@@ -1196,33 +1509,38 @@ function unsell(id) {
 }
 /* ===== الإعدادات ===== */
 function settingsView() {
-  const curTheme = localStorage.getItem(THEME_KEY) || 'auto';
-  const themeBtn = (v, label, icon) => `<button class="${curTheme === v ? 'on' : ''}" onclick="setTheme('${v}')" aria-label="${label}">${icon}${label}</button>`;
+  const cur = localStorage.getItem(THEME_KEY) || 'auto';
+  const isDark = document.documentElement.getAttribute('data-theme') === 'black';
   const hasPinNow = hasPin();
-  page('الإعدادات', `
-    <div class="card">
-      <div class="row" style="margin-bottom:10px"><b>المظهر</b><span class="mut">فاتح / داكن / تلقائي</span></div>
-      <div class="theme-toggle"><div class="seg">
-        ${themeBtn('white', 'فاتح', ICO.sun)}${themeBtn('black', 'داكن', ICO.moon)}${themeBtn('auto', 'تلقائي', ICO.auto)}
-      </div></div>
+  const days = db.lastBackup ? Math.floor((Date.now() - db.lastBackup) / 864e5) : null;
+  const good = days !== null && days <= 7;
+  const chev = ICO.back2.replace('class="ico"', 'class="ico chev"');
+  const row = (ic, t, fn, sub) => `<div class="card tap menu" tabindex="0" onclick="${fn}" onkeydown="if(event.key==='Enter'){${fn}}">${ic}<div>${t}${sub ? `<div class="mut" style="font-weight:400">${sub}</div>` : ''}</div>${chev}</div>`;
+  const sw = (on, fn, label) => `<button class="sw ${on ? 'on' : ''}" role="switch" aria-checked="${on}" aria-label="${label}" onclick="${fn}"><i></i></button>`;
+  page('الإعدادات والدعم', `
+    <h2 class="sec">النسخ الاحتياطي</h2>
+    <div class="card bk">
+      <div class="bkh ${good ? 'good' : ''}">${good ? ICO.check : ICO.warn}<span>${good ? 'آخر نسخة احتياطية قبل ' + days + ' يوم.' : days === null ? 'غير مفعّل. بياناتك غير محمية حالياً.' : 'آخر نسخة احتياطية قبل ' + days + ' يوم.'}</span></div>
+      <div class="mut">صدّر نسخة احتياطية لحماية بياناتك من الضياع${db.lastBackup ? ' (آخر نسخة: ' + fmt(db.lastBackup) + ')' : ''}.</div>
+      <div class="acts2"><button class="o" onclick="$('imp').click()">${ICO.up} استيراد</button><button class="b" onclick="exportData()">${ICO.down} تصدير نسخة</button></div>
     </div>
-    <div class="card">
-      <div class="row" style="margin-bottom:10px"><b>القفل</b><span class="mut">${hasPinNow ? 'مفعّل' : 'غير مفعّل'}</span></div>
-      ${hasPinNow
-        ? `<div class="acts"><button class="o" onclick="changePinForm()">${ICO.edit} تغيير الرقم</button><button class="o d" onclick="removePinConfirm()">${ICO.trash} إزالة القفل</button></div>`
-        : `<button class="b" onclick="setPinForm()">${ICO.lock} تفعيل القفل</button>`}
-    </div>
-    <div class="card">البيانات تُحفظ على هذا الجهاز داخل المتصفح ولا تُرسل لأي خادم. قد تضيع عند مسح بيانات المتصفح أو نقل الملف أو فقدان الجهاز؛ صدّر نسخة احتياطية بانتظام.
-      <div class="mut">التخزين الدائم: ${persisted ? '<span class="ok">مفعّل</span>' : 'غير مضمون من المتصفح'}<br>آخر نسخة احتياطية: ${db.lastBackup ? fmt(db.lastBackup) : 'ما أكو'}<br><b>ملاحظة:</b> قفل الـPIN حاجز بسيط داخل الواجهة وليس تشفيراً للبيانات.</div></div>
     ${syncCard()}
-    <h2>النسخ الاحتياطي والمزامنة بين الأجهزة</h2>
-    <div class="card mut">لمزامنة جهازين: صدّر نسخة من الجهاز الأول، أرسلها للثاني (واتساب أو تلكرام أو Drive)، واستوردها هناك واختر <b>دمج</b>. كرّر العملية بالاتجاه المعاكس لما تضيف من الجهاز الثاني.</div>
-    <button class="b" onclick="exportData()">${ICO.down} تصدير نسخة احتياطية</button>
-    <button class="o" onclick="$('imp').click()">${ICO.up} استيراد نسخة احتياطية</button>
+    <h2 class="sec">إعدادات التطبيق</h2>
+    <div class="card setrow">${ICO.moon}<b>الوضع الليلي</b>${sw(isDark, "setTheme('" + (isDark ? 'white' : 'black') + "')", 'الوضع الليلي')}</div>
+    <div class="card setrow">${ICO.auto}<b>اتباع نمط الجهاز</b>${sw(cur === 'auto', "setTheme('" + (cur === 'auto' ? (isDark ? 'black' : 'white') : 'auto') + "')", 'تلقائي')}</div>
+    <div class="card"><b>وجه العرض</b><div class="mut" style="margin:2px 0 10px">اختر شكل التطبيق: تلقائي، تلفون، أو لابتوب (يعيد تحميل الصفحة).</div>
+      <div style="display:flex;gap:8px">${[['auto', 'تلقائي'], ['phone', 'تلفون'], ['laptop', 'لابتوب']].map(([k, t]) => `<button class="${(window.__view || 'auto') === k ? 'b' : 'o'}" style="flex:1;justify-content:center" onclick="setView('${k}')">${t}</button>`).join('')}</div></div>
+    <h2 class="sec">الحماية</h2>
+    ${hasPinNow
+      ? row(ICO.edit, 'تغيير الرقم السري', 'changePinForm()') + row(ICO.trash, 'إزالة القفل', 'removePinConfirm()')
+      : row(ICO.lock, 'تفعيل القفل', 'setPinForm()', 'غير مفعّل')}
+    <h2 class="sec">حول التطبيق</h2>
+    <div class="card mut">${ICO.info} البيانات تُحفظ على هذا الجهاز داخل المتصفح. قد تضيع عند مسح بيانات المتصفح أو نقل الملف أو فقدان الجهاز؛ صدّر نسخة احتياطية بانتظام.<br>التخزين الدائم: ${persisted ? '<span class="ok">مفعّل</span>' : 'غير مضمون من المتصفح'}<br><b>ملاحظة:</b> قفل الـPIN حاجز بسيط داخل الواجهة وليس تشفيراً للبيانات.<br><br>لمزامنة جهازين: صدّر نسخة من الجهاز الأول، واستوردها في الثاني واختر <b>دمج</b>، أو سجّل الدخول للمزامنة السحابية.</div>
     <input id="imp" type="file" accept=".json,application/json" hidden onchange="importData(this.files[0])">
     <div id="msg" class="ok"></div>
-  `);
+  `, '', true);
 }
+function setView(v) { try { localStorage.setItem('daftar.view', v); } catch (e) {} location.reload(); }
 function setPinForm() {
   modal(`<h2>${ICO.lock} تفعيل القفل</h2>
     <label>الرقم السري (4 أرقام)<input id="p1" type="tel" inputmode="numeric" maxlength="4"></label>
@@ -1385,6 +1703,36 @@ document.addEventListener('click', e => {
   };
   document.addEventListener('touchend', end);
   document.addEventListener('touchcancel', end);
+})();
+
+/* ===== سلاسة إضافية: JS ===== */
+(() => {
+  const app = $('app'), modal = $('modal');
+  /* 1) صور: تحميل كسول + ظهور تدريجي */
+  const prep = root => root.querySelectorAll && root.querySelectorAll('img:not([data-s])').forEach(im => {
+    im.dataset.s = 1; im.decoding = 'async'; if (!im.loading) im.loading = 'lazy';
+    if (!im.complete) { im.classList.add('pre'); const f = () => im.classList.remove('pre'); im.addEventListener('load', f, { once: true }); im.addEventListener('error', f, { once: true }); }
+  });
+  const mo = new MutationObserver(ms => { for (const m of ms) m.addedNodes.forEach(n => n.nodeType === 1 && (n.tagName === 'IMG' ? prep({ querySelectorAll: () => [n] }) : prep(n))); });
+  [app, modal].forEach(el => el && mo.observe(el, { childList: true, subtree: true }));
+  /* 2) الضغط على التبويب الحالي = رجوع لأعلى بسلاسة */
+  document.addEventListener('click', e => {
+    const b = e.target.closest('.bottom-nav button.active');
+    if (b) window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+  /* 3) سحب النافذة للأسفل: مقاومة مطاطية + تعتيم الخلفية تدريجياً */
+  let sh = null, ov = null, y0 = null, dy = 0, raf = 0;
+  modal.addEventListener('touchstart', e => {
+    const s = e.target.closest('.sheet'); if (!s) return;
+    sh = s; ov = s.closest('.ov'); y0 = e.touches[0].clientY; dy = 0;
+  }, { passive: true });
+  modal.addEventListener('touchmove', e => {
+    if (y0 === null || !sh || !sh.style.transform) return;
+    dy = Math.max(0, e.touches[0].clientY - y0);
+    cancelAnimationFrame(raf);
+    raf = requestAnimationFrame(() => { if (ov) ov.style.background = 'rgba(8,14,20,' + (.55 * Math.max(.2, 1 - dy / 450)) + ')'; });
+  }, { passive: true });
+  modal.addEventListener('touchend', () => { y0 = null; if (ov) setTimeout(() => { if (ov) ov.style.background = ''; }, 220); });
 })();
 /* ===== Supabase: الدخول والمزامنة ===== */
 // الصق هنا رابط المشروع ومفتاح anon (Project Settings → API). المفتاح العام آمن بوجود RLS.
