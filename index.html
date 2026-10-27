@@ -941,6 +941,59 @@ img.pre{opacity:0}
 .thumbs>*{scroll-snap-align:start}
 main.in-l,main.in-r{will-change:transform,opacity;animation-duration:.3s;animation-timing-function:var(--ease)}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* ===== إصلاح الرجفة + التكيّف التلقائي مع حجم الشاشة ===== */
+html{scroll-behavior:auto!important;overflow-x:clip;-webkit-text-size-adjust:100%;text-size-adjust:100%}
+body{overflow-x:clip;min-height:100vh;min-height:100dvh}
+/* ارتفاع الهيدر ثابت دائماً (كان يقفز 12px عند التمرير) */
+header,body.sc header,body.down header{padding-top:calc(env(safe-area-inset-top) + 14px)!important;padding-bottom:10px!important;transition:none!important;will-change:auto!important}
+header{min-height:calc(env(safe-area-inset-top) + 66px)}
+/* انتقال خفيف بدون حركة أفقية كبيرة وبدون تأخير متدرّج */
+main{will-change:auto!important;backface-visibility:visible!important;-webkit-backface-visibility:visible!important}
+main.enter,main.in-l,main.in-r{animation:pgIn .18s ease-out backwards!important}
+main.enter>*,main.in-l>*,main.in-r>*{animation:none!important}
+@keyframes pgIn{from{opacity:0;transform:translate3d(0,6px,0)}}
+@media(prefers-reduced-motion:reduce){main.enter,main.in-l,main.in-r{animation:none!important}}
+.sheet{max-height:92vh;max-height:92dvh}
+
+/* --- التكيّف: المتغيّر --wrap يحدد عرض المحتوى ويتبعه الهيدر --- */
+:root{--wrap:680px}
+main{max-width:var(--wrap)!important;margin-inline:auto}
+header{padding-inline:max(18px,calc((100% - var(--wrap))/2 + 18px))!important}
+
+/* هواتف صغيرة */
+@media(max-width:359px){
+  main{padding:12px 10px;gap:10px}
+  header h1,header.sub h1{font-size:18px!important}
+  .hcard{padding:16px 12px;gap:10px}.hcard .ht b{font-size:19px}.hcard .ht span{font-size:14px}
+  .stat b{font-size:21px}.money-card b{font-size:17px}
+  .tabs button{font-size:15px}.tabs button .ico{width:22px;height:22px}
+  .sbox{height:52px}.opt{font-size:17px}
+}
+/* هاتف بالعرض (landscape) */
+@media(max-height:480px) and (orientation:landscape){
+  header{min-height:0}
+  header,body.sc header,body.down header{padding-top:calc(env(safe-area-inset-top) + 8px)!important;padding-bottom:6px!important}
+  button.b.fab{width:auto;height:46px;padding:0 16px;border-radius:16px;bottom:calc(env(safe-area-inset-bottom) + 12px)!important}
+  .empty-big{padding-top:24px}.empty-doc{padding:30px 10px}
+}
+/* تابلت عمودي: عمودين للقوائم */
+@media(min-width:600px){
+  :root{--wrap:820px}
+  main{padding:20px 22px}
+  #hl,#hp,#res{grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr))!important}
+  #res>.mut,#res>.empty,#hl>.empty,#hp>.empty-doc{grid-column:1/-1}
+  .sheet{max-width:640px}
+}
+@media(min-width:600px){#hl,#hp{display:grid}}
+/* لابتوب/شاشة كبيرة */
+@media(min-width:900px){
+  :root{--wrap:1100px}
+  main{max-width:var(--wrap)!important;padding:30px 32px}
+  header{padding-inline:max(32px,calc((100% - var(--wrap))/2 + 32px))!important}
+}
+main:has(.theme-toggle){max-width:780px!important}
+@media(min-width:1500px){:root{--wrap:1280px}}
 </style>
 <script>
 /* وجه العرض: auto | phone | laptop */
@@ -1167,13 +1220,25 @@ function page(title, body, fab, back, showNav, opts) {
   opts = opts || {};
   const lead = back ? `<button class="hb" onclick="goUp()" aria-label="رجوع">${ICO.fwd}</button>` : '';
   const fl = fab ? (String(fab).indexOf('hoodForm') === 0 ? 'إضافة حي' : 'إضافة عقار') : '';
-  $('app').innerHTML =
-    `<header class="${back ? 'sub' : 'top'}">
-      ${lead}<h1>${esc(title)}</h1>${opts.acts || ''}
-    </header>
-    ${opts.tabs || ''}
-    <main>${body}</main>
-    ${fab ? `<button class="b fab" onclick="${fab}" aria-label="${fl}">${ICO.plus}<span>${fl}</span></button>` : ''}`;
+  const hdrHTML = `${lead}<h1>${esc(title)}</h1>${opts.acts || ''}`;
+  const fabHTML = fab ? `<button class="b fab" onclick="${fab}" aria-label="${fl}">${ICO.plus}<span>${fl}</span></button>` : '';
+  const app = $('app');
+  const h = app.querySelector(':scope > header'), m = app.querySelector(':scope > main');
+  /* الهيكل موجود: نحدّث الأجزاء المتغيرة فقط بدل إعادة بناء كل شيء (يمنع الرجفة) */
+  if (h && m && !app.querySelector('.lock-screen')) {
+    h.className = back ? 'sub' : 'top';
+    if (h.innerHTML !== hdrHTML) h.innerHTML = hdrHTML;
+    app.querySelectorAll(':scope > .tabs').forEach(t => t.remove());
+    const nm = document.createElement('main'); nm.innerHTML = body;
+    m.replaceWith(nm);
+    if (opts.tabs) { const t = document.createElement('div'); t.innerHTML = opts.tabs; while (t.firstChild) nm.before(t.firstChild); }
+    const f = app.querySelector(':scope > .fab');
+    if (!fab) { if (f) f.remove(); }
+    else if (!f) app.insertAdjacentHTML('beforeend', fabHTML);
+    else if (f.getAttribute('onclick') !== fab) { f.setAttribute('onclick', fab); f.setAttribute('aria-label', fl); f.innerHTML = `${ICO.plus}<span>${fl}</span>`; }
+    return;
+  }
+  app.innerHTML = `<header class="${back ? 'sub' : 'top'}">${hdrHTML}</header>${opts.tabs || ''}<main>${body}</main>${fabHTML}`;
 }
 function goUp() { backNav = true; location.hash = ''; }
 function toggleTheme() {
@@ -1217,9 +1282,12 @@ function countUp() {
   requestAnimationFrame(step);
 }
 function render() {
-  const nav = location.hash !== lastHash, back = backNav, y = back ? (scrollPos[location.hash] || 0) : 0;
-  const run = () => { render0(); if (nav) window.scrollTo(0, y); countUp(); };
+  const nav = location.hash !== lastHash, back = backNav;
+  const y = nav ? (back ? (scrollPos[location.hash] || 0) : 0) : window.scrollY;
+  const jump = yy => window.scrollTo({ top: yy, left: 0, behavior: 'instant' });
+  const run = () => { render0(); jump(y); countUp(); };
   let used = false;
+  if (nav) { down = false; document.body.classList.remove('down'); }
   if (swipeIn) { run(); const m = document.querySelector('main'); if (m) m.classList.add(swipeIn); used = true; }
   else if (nav && lastHash !== null) { const cls = back || tabIdx(location.hash) < tabIdx(lastHash) ? 'in-r' : 'in-l'; run(); const m = document.querySelector('main'); if (m) m.classList.add(cls); used = true; }
   else run();
@@ -1570,8 +1638,15 @@ function updatePin() {
   setPin(p1); closeModal(); render();
 }
 function removePinConfirm() {
-  if (!confirm('إزالة القفل؟ التطبيق راح يفتح بدون رقم سري.')) return;
-  delPin(); render();
+  modal(`<h2>${ICO.lock} إزالة القفل</h2>
+    <div class="mut" style="margin-bottom:8px">اكتب الرقم السري الحالي لإزالة القفل. التطبيق راح يفتح بعدها بدون رقم سري.</div>
+    <label>الرقم الحالي<input id="p0" type="tel" inputmode="numeric" maxlength="4"></label>
+    <div class="acts"><button class="b" onclick="removePin()">${ICO.check} إزالة</button><button class="o" onclick="closeModal()">إلغاء</button></div>`);
+  $('p0').focus();
+}
+function removePin() {
+  if (val('p0') !== getPin()) return alert('الرقم الحالي غلط.');
+  delPin(); closeModal(); render();
 }
 async function exportData() {
   db.lastBackup = Date.now();
