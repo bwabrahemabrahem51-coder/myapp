@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
-<meta name="theme-color" content="#121212">
+<meta name="theme-color" content="#FFF9F3">
 <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAIAAADdvvtQAAADgUlEQVR4nO3dQXIdNRRA0W+KbYVZmIXFMmTIyhgkFQzGjvH9v6XXfc4K1E+3JJXtKj99+vzlBh/10+oFMJuASAREIiASAZEIiERAJAIiERCJgEgERCIgEgGRCIhEQCQCIhEQiYBIBEQiIBIBkQiIREAkAiIREImASAREIiASAZEIiERAJAIiERCJgEgERCIgEgGRCIhEQCQC+oE///h99RK2JqC3fK1HQ28Q0Kued6Oh1zz5VwcvvZbLL7/+dvBK9iegf/vhYSOj51xh//Ceq8p19pyA/vb+MjT0nYC++b9NaOgrAd1uH61BQzeP6B7Bxd/Ulw7ojkfIZTO67hV23wvostfZRQN6xH5fs6ErBvS4nb5gQ5cL6NF7fLWGLvSIPnJrr/OmvsoJdPDBcJ1z6BIn0MLtPP1RdP4TaO1hcPqj6OQB7bB/O6zhcc4c0D47t89K7u6cb6A9N+yU76ETnkB71nPbeGHF2QLafJM2X94HnOoKG7Q9p7nOznMCDarnNm21bzhJQBP3Y+KaXxp/hU3fhul32ewTaHo9t/mfMDig6aP/bvSHTL3CRg/9NROvs5En0Cnruc38rnkBTZzy+437uklX2Ljhftigu2zMCXSdem6jPnZGQIMGei9TPnlAQFNGeXcjPnz3N9CIIT7azk+irU8g9Xy18xw2PYF2Htkqe55DO55A6vlPe45lu4D2HNMmNhzOXgFtOKDd7DaijQLabTTb2mpQuzyitxrKFDs8q9cHJJ1ieUOLrzD1RMsHuDKg5R9/DmvHuCwg9dzRwmGuCUg9d7dqpAse0ep5qIOf1YcGJJ1jHNnQcVeYeg5z5KgPCkg9Bzts4Ot/kPiS2l6z/MeGL230uzAmEhCJgEgERCIgEgGRCIhEQCQCIhEQiYBIBEQiIBIBkQiIREAkAiIREMnPqxew0r3+QvTKf4PrBCIREImASAREIiASAZEIiERAJAIiERCJgEgERCIgEgGRCIhEQCQCIhEQiYBIBEQiIBIBkQiIREAkAiIREImASAREIiASAZEIiERAJAIiERCJgEgERCIgEgGRPH36/GX1GhjMCUQiIBIBkQiIREAkAiIREImASAREIiASAZEIiERAJAIiERCJgEgERCIgEgGRCIhEQCQCIhEQiYBIBEQiIBIBkQiIREAkAiIREImASAREIiASAZEIiERAJAIiERDJX/nM6blMwlkYAAAAAElFTkSuQmCC">
 <link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAADPklEQVR4nO3dQVYUMRSG0cLjtnSmM12sQ4euzAEeFQ4/3TTVyXvJvStIvXyk0sCBh09fvh3wkg+zF0Bd4iASB5E4iMRBJA4icRCJg0gcROIgEgeROIjEQSQOInEQiYNIHETiIBIHkTiIxEEkDiJxEImDSBxE4iASB5E4iMRBJA4icRCJg0gcROIgEgeROIjE8cSvnz9mL6EQcfzzWIY+/hLHH/83oY9H4jiOl2rQx3EcD5v/kdqLEXz++n3MSgra+uS45njY+QjZN47rd33bPjaN4637vWcfO8Zx205v2Md2cbxnj3frY6NPK2dt7T6fX3aJ4/Qv+h0S2eK1co/XwQ6vmPXjuN8uLt/H4nHce//W7mPlOMbs3MJ9rHkhHb9hS95PFzw5pnwpL3l+rHZyTN+klY6QpU6O6WUUWcNZ1omjzq7UWck7LRJHtf2otp7btL9zVN6G7veP3idH5TKO8su7qHEcLUbfYpFJ1zgaDb3RUp9peedoOu52V5B+J0fTMo6GK28WR7v5PtNr/W1eK73G+rou75ceJ8dKZRx9HqdBHF1G+SYtHqp6HC2GeJv6j1b6zlF/fKcoewWpe3JsUsZR+Ekrnhxlh3VXBc+PcifHnmUcJR+8VhwFBzRStccvFEe10UxRaghV4ig1lLnqjKLEhbTOOEqZfkWdHIcsXje3j5mvFWVcNHdE0+JQxpUmDmpOHMp4k1njmhCHMm4wZWij41DGzcaPbtynFVmcZdhHmEEnhzJONGyYI+JQxunGjPTucSjjTgYMtsS3zw8NPTX9G+ePqvzgjYLEQSQOInEQiYNIHETiIBIHkTiIxEEkDiJxEImDSBxE4iASB5E4iD7OXsA4Z/161T6/tObkIBIHkTiIxEEkDiJxEImDSBxE4iASB5E4iMRBJA4icRCJg0gcROIgEgeROIjEQSQOInEQiYNIHETiIBIHkTiIxEEkDiJxEImDSBxE4iASB5E4iMRBVOVfh1KQk4NIHETiIBIHkTiIxEEkDiJxEImDSBxE4iASB5E4iMRBJA4icRCJg0gcROIgEgeROIjEQSQOInEQiYNIHETiIBIHkTiIxEEkDiJxEImDSBxE4iASB9FvQTzexYWE4vIAAAAASUVORK5CYII=">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="دفتر عقاراتي">
-<title>دفتر عقاراتي</title>
+<meta name="apple-mobile-web-app-title" content="منارة الحدباء للأستثمار العقاري">
+<title>منارة الحدباء للأستثمار العقاري</title>
 <script>
 /* PWA: manifest مدمج داخل الملف (بدون ملفات خارجية) */
 (function () {
@@ -17,7 +17,7 @@
     var P = 'data:image/png;base64,';
     var base = new URL('./', location.href).href, start = location.href.split('#')[0].split('?')[0];
     var m = {
-      name: 'دفتر عقاراتي', short_name: 'عقاراتي', lang: 'ar', dir: 'rtl',
+      name: 'منارة الحدباء للأستثمار العقاري', short_name: 'منارة الحدباء', lang: 'ar', dir: 'rtl',
       start_url: start, scope: base, display: 'standalone',
       background_color: '#ffffff', theme_color: '#3d454d',
       icons: [
@@ -578,7 +578,7 @@ button.b.fab{background:var(--gold-grad);border:0;color:#1B1405;box-shadow:inset
     grid-template-columns:1fr;grid-auto-rows:min-content;align-content:start;gap:6px;
     padding:26px 14px 20px;border:0;border-left:1px solid var(--bd);border-radius:0;
     background:var(--card);box-shadow:none;-webkit-backdrop-filter:none;backdrop-filter:none}
-  .bottom-nav::before{content:"دفتر عقاراتي";display:block;font:700 28px var(--serif);background:var(--gold-grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  .bottom-nav::before{content:"منارة الحدباء للأستثمار العقاري";display:block;font:700 28px var(--serif);background:var(--gold-grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
     padding:0 14px 20px;margin-bottom:10px;border-bottom:1px solid var(--bd)}
   .bottom-nav button{flex-direction:row;justify-content:flex-start;gap:12px;font-size:15px;padding:12px 14px;border-radius:14px}
   .bottom-nav button:not(.active):hover{background:var(--soft);color:var(--tx)}
@@ -835,7 +835,7 @@ header h1{flex:1;margin:0}
 header.sub h1{color:var(--tx)!important;-webkit-text-fill-color:var(--tx)!important;font-size:21px}
 header .hb{margin-inline-end:4px}
 main{max-width:680px}
-button.b.fab{inset-inline-start:auto!important;inset-inline-end:18px!important;bottom:calc(env(safe-area-inset-bottom) + 20px)!important}
+button.b.fab{inset-inline-start:auto!important;inset-inline-end:18px!important;bottom:calc(env(safe-area-inset-bottom) + 145px)!important;z-index:30}
 button.b.fab span{font-size:16px}
 .sbox{display:flex;align-items:center;gap:12px;height:62px;padding:0 18px;border:1px solid var(--bd);border-radius:22px;background:transparent}
 .sbox .ico{color:var(--mut)!important;width:26px;height:26px}
@@ -916,6 +916,22 @@ main>h2.sec::before,main>h2.sec::after{display:none!important}
   header,main{margin-inline:auto}
 }
 
+/* ===== تنقل سفلي مرتب وصفحة الحساب ===== */
+.top-actions{display:none!important}
+.bottom-nav{grid-template-columns:repeat(4,minmax(0,1fr));padding:8px 8px calc(env(safe-area-inset-bottom) + 8px);gap:6px}
+.bottom-nav button{font-size:11px;min-height:54px;gap:4px}
+.bottom-nav button .ico{width:23px;height:23px}
+.bottom-nav button.menu-trigger{color:var(--pri)}
+.account-hero{display:grid;justify-items:center;text-align:center;gap:10px;padding:24px 16px}
+.profile-avatar{width:94px;height:94px;border-radius:50%;display:grid;place-items:center;overflow:hidden;background:var(--soft);border:2px solid var(--pri);color:var(--pri);font-size:36px;font-weight:700}
+.profile-avatar img{width:100%;height:100%;object-fit:cover}
+.account-hero h2{margin:2px 0 0}
+.menu-sheet{max-width:440px!important;border-radius:26px!important;margin:0 14px 12px!important;width:calc(100% - 28px)!important}
+.menu-sheet .menu-choice{display:flex;align-items:center;gap:14px;padding:15px 14px;border:1px solid var(--bd);border-radius:16px;background:var(--card);color:var(--tx);font:inherit;text-align:start;width:100%}
+.menu-choice .ico{width:24px;height:24px;color:var(--pri)}
+.menu-sheet .menu-choice:active{background:var(--soft)}
+@media(min-width:900px){.bottom-nav{grid-template-columns:repeat(4,minmax(0,1fr))}}
+
 /* ===== سلاسة إضافية (Smooth Pro) ===== */
 :root{--ease:cubic-bezier(.22,.8,.24,1);--ease-spring:cubic-bezier(.2,.9,.25,1.12)}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;text-rendering:optimizeLegibility}
@@ -994,6 +1010,93 @@ header{padding-inline:max(18px,calc((100% - var(--wrap))/2 + 18px))!important}
 }
 main:has(.theme-toggle){max-width:780px!important}
 @media(min-width:1500px){:root{--wrap:1280px}}
+/* ===== شاشة الترحيب ===== */
+.wl{position:fixed;inset:0;z-index:45;background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;overflow:hidden;
+  transition:transform .55s cubic-bezier(.7,0,.3,1),opacity .45s}
+.wl.out{transform:translateY(-100%);opacity:0;pointer-events:none}
+.wl-top{display:grid;justify-items:center;gap:14px;transition:transform .7s cubic-bezier(.2,.8,.2,1);animation:wlpop .7s cubic-bezier(.2,.9,.25,1.1) both}
+.wl-top svg{width:min(34vw,170px);height:auto;stroke:none;filter:none}
+.wl-top h1{margin:0;font:700 clamp(28px,6vw,40px) "Readex Pro","IBM Plex Sans Arabic",sans-serif;color:var(--pri);opacity:0;transform:translateY(8px);transition:opacity .5s .2s,transform .5s .2s}
+.wl-top .sub{color:var(--mut);opacity:0;transition:opacity .5s .3s}
+.wl.go .wl-top{transform:translateY(-14vh) scale(.82)}
+.wl.go .wl-top h1,.wl.go .wl-top .sub{opacity:1;transform:none}
+.wl-panel{position:absolute;inset-inline:0;bottom:0;margin-inline:auto;width:min(100%,460px);background:var(--card);border:1px solid var(--bd);border-bottom:0;
+  border-radius:30px 30px 0 0;padding:26px 22px calc(env(safe-area-inset-bottom) + 24px);display:grid;gap:12px;
+  transform:translateY(110%);transition:transform .65s cubic-bezier(.2,.85,.25,1) .1s}
+.wl.go .wl-panel{transform:none}
+.wl-panel{max-height:92vh;max-height:92dvh;overflow-y:auto}
+.pwl{display:grid;gap:4px;font-size:13.5px;color:var(--mut)}
+.pwl span::before{content:"○ "}.pwl span.ok{color:var(--ok,#1a9b5b)}.pwl span.ok::before{content:"✓ "}
+.wl-panel h2{margin:0;font:700 22px "Readex Pro","IBM Plex Sans Arabic",sans-serif;color:var(--tx)}
+.wl-panel .b,.wl-panel .o{justify-content:center;height:54px;font-size:17px;border-radius:18px!important}
+.wl-panel .lnk{border:0;height:40px;color:var(--mut)}
+.wl-panel .back{justify-self:start;border:0;width:auto;height:40px;padding:0 4px;color:var(--mut)}
+@keyframes wlpop{from{opacity:0;transform:scale(.8)}}
+@media(min-width:700px){.wl-panel{border-radius:30px;bottom:6vh;border-bottom:1px solid var(--bd)}}
+
+/* سحب بطاقة الحي لإظهار تعديل/حذف */
+.hrow{position:relative}
+.hrow .hcard{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none;position:relative;z-index:1;touch-action:pan-y;transition:transform .22s ease}
+.hrow.drag .hcard{transition:none}
+.hact{position:absolute;top:0;bottom:0;width:156px;display:none;gap:8px;align-items:stretch;z-index:0}
+.hrow.sl .hact.l,.hrow.sr .hact.r{display:flex}
+.hact.l{left:0}.hact.r{right:0}
+.hact button{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;border:0;border-radius:22px;color:#fff;font:600 14px "IBM Plex Sans Arabic",sans-serif;cursor:pointer;padding:0}
+.hact button .ico{width:24px;height:24px;color:#fff!important;stroke:#fff}
+.hact .ed{background:#1F3347}
+.hact .dl{background:var(--dng,#d33)}
+
+/* ===== THEME PALETTE: true black / cream / white ===== */
+:root[data-theme="black"]{--bg:#000;--card:#0B0B0B;--tx:#F5F5F5;--mut:#B8B8B8;--bd:#292929;--soft:#151515;--pri:#F5F5F5;--pri2:#FFFFFF;--onpri:#111111;--hd1:#1B1B1B;--hd2:#000;--ttl:#FFFFFF;--hbtn:#FFFFFF;--tint:#1A1A1A;--gold:#F5F5F5;--gold2:#DADADA;--price:#FFFFFF;--ok:#4ADE9A;--dng:#FF8B8B;--sh:0 2px 12px rgba(0,0,0,.45)}
+:root[data-theme="cream"]{--bg:#FFF9F3;--card:#FFFCF8;--tx:#35151F;--mut:#806B70;--bd:#E8D7DA;--soft:#F5E8E9;--pri:#741F35;--pri2:#922D46;--onpri:#FFFFFF;--hd1:#4D1425;--hd2:#741F35;--ttl:#FFF9F3;--hbtn:#FFF9F3;--tint:#F6E5E9;--gold:#741F35;--gold2:#D8B3BE;--price:#741F35;--ok:#28784D;--dng:#B3362F;--sh:0 2px 12px rgba(80,30,45,.08)}
+:root[data-theme="white"]{--bg:#FFFFFF;--card:#FFFFFF;--tx:#202124;--mut:#666B70;--bd:#E0E2E5;--soft:#F5F6F7;--pri:#D94336;--pri2:#EC5B4D;--hd1:#A92E27;--hd2:#D94336;--ttl:#FFFFFF;--hbtn:#FFFFFF;--tint:#FFF0F2;--gold:#D94336;--gold2:#FFD3D9;--price:#C4162F;--ok:#1F8755;--dng:#B3362F;--sh:0 1px 2px rgba(15,27,38,.04),0 4px 14px rgba(15,27,38,.045)}
+:root[data-theme="black"] body,:root[data-theme="cream"] body,:root[data-theme="white"] body{background-image:none!important}
+:root[data-theme="black"] .card,:root[data-theme="cream"] .card,:root[data-theme="white"] .card{box-shadow:var(--sh)!important}
+:root[data-theme="black"] .ico,:root[data-theme="black"] .bottom-nav button.active{filter:none!important;box-shadow:none!important;border-color:#333!important}
+:root[data-theme="black"] .bottom-nav button.active{background:#1B1B1B!important;color:#fff!important}
+:root[data-theme="black"] .sheet.form,:root[data-theme="black"] .sheet.form.pageform{background:var(--bg)!important;color:var(--tx)!important}
+:root[data-theme="cream"] .sheet.form,:root[data-theme="cream"] .sheet.form.pageform{background:var(--bg)!important;color:var(--tx)!important}
+:root[data-theme="black"] input,:root[data-theme="black"] textarea,:root[data-theme="black"] select{background:#111!important;color:#F5F5F5!important;border-color:#333!important}
+:root[data-theme="cream"] input,:root[data-theme="cream"] textarea,:root[data-theme="cream"] select{background:#FFFCF5!important;color:#332F29!important;border-color:#E8DDCA!important}
+
+
+
+/* ===== نسخة اللابتوب والشاشات الكبيرة ===== */
+@media (min-width: 1000px){
+  body{padding-bottom:28px!important;background:var(--bg)}
+  header{position:sticky;top:0;z-index:15;min-height:82px!important;padding:18px 34px!important;border-radius:0 0 0 24px;margin-inline-start:0!important;margin-inline-end:250px!important;max-width:none!important}
+  header h1{font-size:25px!important}
+  main{width:auto!important;max-width:none!important;margin:0 250px 0 0!important;padding:30px 38px!important;gap:20px!important}
+  :root{--wrap:unset}
+  .bottom-nav{position:fixed!important;top:0!important;bottom:0!important;right:0!important;left:auto!important;width:232px!important;height:100dvh!important;z-index:14!important;
+    display:flex!important;flex-direction:column!important;align-items:stretch!important;justify-content:flex-start!important;gap:10px!important;
+    padding:110px 16px 24px!important;border:0!important;border-left:1px solid var(--bd)!important;border-radius:0!important;
+    background:var(--card)!important;box-shadow:-8px 0 28px rgba(0,0,0,.06)!important;backdrop-filter:none!important}
+  .bottom-nav button{width:100%!important;min-height:58px!important;flex-direction:row!important;justify-content:flex-start!important;gap:14px!important;
+    padding:14px 16px!important;border-radius:16px!important;font-size:15px!important;text-align:right!important}
+  .bottom-nav button .ico{width:24px!important;height:24px!important;flex-shrink:0}
+  .bottom-nav button.active{background:color-mix(in srgb,var(--pri) 13%,var(--card))!important;color:var(--pri)!important;font-weight:700!important}
+  .bottom-nav button.active .ico{color:var(--pri)!important}
+  button.b.fab{position:fixed!important;right:270px!important;bottom:30px!important;inset-inline-start:auto!important;inset-inline-end:270px!important;width:auto!important;height:58px!important;padding:0 22px!important;border-radius:18px!important;z-index:18!important}
+  .hlist{grid-template-columns:repeat(auto-fill,minmax(300px,1fr))!important;gap:18px!important}
+  .hcard{min-height:150px;padding:24px!important;border-radius:24px!important}
+  .home-tools{max-width:100%;grid-template-columns:minmax(280px,1fr) auto!important;gap:14px!important;margin-bottom:8px!important}
+  .home-tools .sbox,.home-tools .home-add{height:60px!important}
+  .stats{gap:16px!important}
+  .tiles{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:16px!important}
+  .money-grid{gap:16px!important}
+  .card,.tile,.stat,.money-card{box-shadow:var(--sh)!important}
+  .sheet{max-width:760px!important;border-radius:28px!important}
+  .ov{align-items:center!important;padding:24px!important}
+  .ov:has(.sheet.pageform){align-items:center!important}
+  .menu-sheet{max-width:500px!important;margin:auto!important;width:100%!important}
+  .empty{padding:64px 20px!important}
+}
+@media (min-width: 1450px){
+  main{padding:38px 48px!important}
+  .hlist{grid-template-columns:repeat(auto-fill,minmax(340px,1fr))!important}
+}
+
 </style>
 <script>
 /* وجه العرض: auto | phone | laptop */
@@ -1024,41 +1127,199 @@ main:has(.theme-toggle){max-width:780px!important}
 
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Readex+Pro:wght@500;600;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<style id="coherent-theme-fix">
+/* توحيد ألوان كل الواجهة حسب الثيم المختار */
+:root[data-theme="cream"]{
+ --bg:#FFF9F3;--card:#FFFCF8;--tx:#35151F;--mut:#806B70;--bd:#E8D7DA;--soft:#F5E8E9;
+ --pri:#741F35;--pri2:#922D46;--onpri:#FFFFFF;--hd1:#4D1425;--hd2:#741F35;
+ --navy:#741F35;--navy2:#922D46;--ttl:#741F35;--hbtn:#741F35;--tint:#F6E5E9;
+ --gold:#741F35;--gold2:#D8B3BE;--price:#741F35;--dng:#B3362F;
+}
+:root[data-theme="white"]{
+ --bg:#FFFFFF;--card:#FFFFFF;--tx:#202124;--mut:#666B70;--bd:#E0E2E5;--soft:#F5F6F7;
+ --pri:#D94336;--pri2:#EC5B4D;--onpri:#FFFFFF;--hd1:#A92E27;--hd2:#D94336;
+ --navy:#D94336;--navy2:#EC5B4D;--ttl:#D94336;--hbtn:#D94336;--tint:#FFF0F2;
+ --gold:#D94336;--gold2:#FFD3D9;--price:#C4162F;--dng:#B3362F;
+}
+:root[data-theme="black"],:root[data-theme="dark"]{
+ --bg:#000000;--card:#0B0B0B;--tx:#F5F5F5;--mut:#B8B8B8;--bd:#292929;--soft:#151515;
+ --pri:#F5F5F5;--pri2:#CFCFCF;--onpri:#111111;--hd1:#1B1B1B;--hd2:#000000;
+ --navy:#F5F5F5;--navy2:#CFCFCF;--ttl:#FFFFFF;--hbtn:#FFFFFF;--tint:#1A1A1A;
+ --gold:#F5F5F5;--gold2:#DADADA;--price:#FFFFFF;--dng:#FF8B8B;
+}
+/* كل الأيقونات تتبع لون النص أو لون الثيم، بما فيها الخروج والحساب */
+button .ico,a .ico,.menu .ico,.bottom-nav .ico,.sheet .ico,.acts .ico,
+.account-hero .ico,.profile-avatar + h2 .ico{stroke:currentColor;fill:none;flex-shrink:0}
+button.o,button.o.d,button.o .ico,button.o.d .ico{color:var(--tx)}
+button.o.d{color:var(--dng)!important;border-color:var(--dng)!important}
+button.o.d .ico{color:var(--dng)!important;stroke:currentColor!important}
+button.b,a.b{background:linear-gradient(135deg,var(--pri2),var(--pri))!important;color:var(--onpri)!important;border-color:var(--pri)!important}
+button.b .ico,a.b .ico,button.b.fab .ico{color:var(--onpri)!important;stroke:currentColor!important}
+button.b.fab{background:linear-gradient(135deg,var(--pri2),var(--pri))!important;color:var(--onpri)!important;inset-inline-start:18px!important;inset-inline-end:auto!important;bottom:calc(env(safe-area-inset-bottom) + 92px)!important;z-index:40!important}
+button.b.fab .ico{color:var(--onpri)!important}
+.bottom-nav button.active{background:color-mix(in srgb,var(--pri) 14%,var(--card))!important;color:var(--pri)!important}
+.bottom-nav button.active .ico{color:var(--pri)!important}
+header h1{color:var(--ttl)!important;-webkit-text-fill-color:var(--ttl)!important}
+header button,header button .ico{color:var(--hbtn)!important;stroke:currentColor!important}
+input:focus,textarea:focus,select:focus{border-color:var(--pri)!important;outline-color:var(--pri)!important;box-shadow:0 0 0 3px color-mix(in srgb,var(--pri) 16%,transparent)!important}
+label input,label select,label textarea,input,select,textarea{accent-color:var(--pri)}
+.card,.offer,.menu-choice,.sheet,.account-hero,.profile-avatar{border-color:var(--bd)}
+.menu-choice .ico,.sheet h2 .ico,.account-hero .ico{color:var(--pri)!important}
+:root[data-theme="black"] button.b.fab{color:#111!important}
+:root[data-theme="black"] button.b.fab .ico{color:#111!important}
+
+/* تحسين الرئيسية: زر إضافة الحي بجانب البحث وبطاقات الأحياء تتبع الثيم */
+.home-tools{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:10px;margin-bottom:2px}
+.home-tools .sbox{min-width:0;height:56px;border-color:var(--bd);background:var(--card)}
+.home-tools .home-add{height:56px;padding:0 15px;border-radius:18px!important;white-space:nowrap;gap:7px;box-shadow:0 6px 16px color-mix(in srgb,var(--pri) 18%,transparent)!important}
+.home-tools .home-add .ico{width:20px;height:20px}
+.hcard{background:linear-gradient(120deg,var(--hood1,var(--pri)),var(--hood2,var(--pri2)))!important;color:var(--hoodtext,#fff)!important;border:1px solid color-mix(in srgb,var(--pri) 22%,var(--bd))!important;box-shadow:0 7px 18px color-mix(in srgb,var(--pri) 15%,transparent)!important}
+.hcard .ico{color:var(--hoodtext,#fff)!important}
+:root[data-theme="cream"]{--hood1:#5B142A;--hood2:#8B2945;--hoodtext:#FFF9F3}
+:root[data-theme="white"]{--hood1:#D94336;--hood2:#F27B6E;--hoodtext:#FFFFFF}
+:root[data-theme="black"],:root[data-theme="dark"]{--hood1:#111111;--hood2:#252525;--hoodtext:#FFFFFF}
+@media(max-width:390px){.home-tools{grid-template-columns:minmax(0,1fr) auto;gap:7px}.home-tools .sbox{padding:0 10px;gap:7px}.home-tools .home-add{padding:0 10px;font-size:14px}.home-tools .home-add span{font-size:14px}}
+</style>
+
+
+<style id="laptop-layout-override">
+/* تخطيط اللابتوب: مساحة أوسع وقائمة جانبية ثابتة مع الحفاظ على ألوان وهوية التصميم */
+@media (min-width: 900px) {
+  body { padding-bottom: 24px !important; }
+  header { margin-inline-start: 0 !important; margin-inline-end: 244px !important; max-width: none !important; padding: 18px 30px !important; min-height: 78px; }
+  header h1 { font-size: clamp(22px, 1.8vw, 28px) !important; }
+  main { width: auto !important; max-width: none !important; margin: 0 244px 0 0 !important; padding: 26px clamp(22px, 3vw, 48px) !important; gap: 18px !important; }
+  .bottom-nav { position: fixed !important; inset-block: 0 !important; inset-inline-start: auto !important; inset-inline-end: 0 !important; width: 224px !important; height: 100vh !important; height: 100dvh !important; display: flex !important; flex-direction: column !important; align-items: stretch !important; justify-content: flex-start !important; gap: 8px !important; padding: 105px 14px 22px !important; border: 0 !important; border-inline-start: 1px solid var(--bd) !important; border-radius: 0 !important; background: var(--card) !important; box-shadow: -6px 0 22px rgba(0,0,0,.06) !important; }
+  .bottom-nav button { width: 100% !important; min-height: 52px !important; flex-direction: row !important; justify-content: flex-start !important; gap: 12px !important; padding: 12px 14px !important; font-size: 14px !important; text-align: right !important; }
+  .bottom-nav button .ico { width: 22px !important; height: 22px !important; flex-shrink: 0 !important; }
+  button.b.fab { right: 264px !important; inset-inline-end: 264px !important; bottom: 26px !important; }
+  .hlist { grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)) !important; gap: 16px !important; }
+  .sheet { max-width: 780px !important; max-height: 88vh !important; border-radius: 24px !important; }
+}
+@media (min-width: 1400px) {
+  header { margin-inline-end: 260px !important; padding-inline: 42px !important; }
+  main { margin-inline-end: 260px !important; padding: 34px 48px !important; }
+  .bottom-nav { width: 240px !important; }
+  button.b.fab { right: 280px !important; inset-inline-end: 280px !important; }
+}
+</style>
+
+<style id="laptop-fields-rtl">
+/* نسخة اللابتوب: كل الحقول تبدأ من اليمين (RTL) */
+@media (min-width: 900px) {
+  .fld, .fld > span, .fld input, .fld select, .fld textarea, .fld small,
+  .fbody, .fbody input, .fbody select, .fbody textarea,
+  main > input[type=search], .fl select, input[type=search], input[type=number], input[type=tel], input[type=text], select, textarea {
+    direction: rtl !important; text-align: right !important;
+  }
+  .fld input[type=number], .fld input[type=tel], input[type=number], input[type=tel] { text-align: right !important; unicode-bidi: plaintext; }
+  .row2, .grp.two, .fl, .money-grid, .home-tools { direction: rtl !important; }
+  .fld.sel::before { inset-inline-end: auto !important; inset-inline-start: 18px !important; }
+  .fld select { padding-inline-end: 0 !important; padding-inline-start: 26px !important; }
+  .ffoot { direction: rtl !important; }
+  button.b.fab { left: 36px !important; right: auto !important; inset-inline-end: auto !important; inset-inline-start: auto !important; width: auto !important; }
+}
+</style>
+
+<style id="laptop-nav-right">
+/* لابتوب: القائمة الجانبية على اليمين والمحتوى بجانبها */
+@media (min-width: 900px) {
+  :root { --navw: 240px; }
+  body:has(.bottom-nav) { padding-inline: 0 !important; padding-left: 0 !important; padding-right: 0 !important; }
+  .bottom-nav {
+    left: auto !important; right: 0 !important;
+    inset-inline-start: 0 !important; inset-inline-end: auto !important;
+    width: var(--navw) !important;
+    border: 0 !important; border-inline-start: 0 !important; border-inline-end: 0 !important;
+    border-left: 1px solid var(--bd) !important;
+    box-shadow: -6px 0 22px rgba(0,0,0,.06) !important;
+    direction: rtl !important;
+  }
+  .bottom-nav button { text-align: right !important; justify-content: flex-start !important; }
+  header { margin-left: 0 !important; margin-right: var(--navw) !important; margin-inline: 0 !important; margin-right: var(--navw) !important; }
+  main { margin: 0 var(--navw) 0 0 !important; }
+  button.b.fab { left: 36px !important; right: auto !important; inset-inline-start: auto !important; inset-inline-end: auto !important; }
+}
+</style>
+
+<style id="reqs-nav">
+@media (max-width: 899px) {
+  .bottom-nav { grid-template-columns: repeat(4, minmax(0, 1fr)) !important; }
+  .bottom-nav button { font-size: 10.5px !important; }
+}
+/* إخفاء زر الإضافة عند فتح أي نافذة */
+body:has(#modal .ov) button.b.fab,body.modal-open button.b.fab{opacity:0!important;pointer-events:none!important;visibility:hidden!important;transform:translateY(130px) scale(.8)!important;transition:opacity .15s,transform .2s,visibility 0s .2s!important}
+/* أداء: بدون blur ثقيل وإخفاء ما هو خارج الشاشة */
+.ov,header,header button,.bottom-nav,.sheet{-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+.ov{animation-duration:.14s!important}
+.sheet{will-change:auto!important}
+body{-webkit-font-smoothing:antialiased;text-rendering:optimizeSpeed}
+@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+/* ثيم: كحلي وذهبي */
+:root[data-theme="navy"]{
+ --bg:#F6F3EC;--card:#FFFEFB;--tx:#13203A;--mut:#6B7385;--bd:#DEDCD3;--soft:#EEEBE2;
+ --pri:#14305C;--pri2:#25508C;--onpri:#FFFFFF;--hd1:#0B1D3A;--hd2:#14305C;
+ --navy:#14305C;--navy2:#25508C;--ttl:#14305C;--hbtn:#14305C;--tint:#E7ECF5;
+ --gold:#B8893A;--gold2:#E9D6A6;--price:#14305C;--ok:#28784D;--dng:#B3362F;--warn:#9B6A21;
+ --gold-grad:linear-gradient(115deg,#9A6F26,#E2C27D 55%,#B8893A);
+ --fab:linear-gradient(145deg,#25508C,#14305C);--fabc:#fff;--fabs:0 14px 28px rgba(20,48,92,.35);
+ --hood1:#0B1D3A;--hood2:#1F4577;--hoodtext:#FBF6E9;
+ --sh:0 2px 12px rgba(11,29,58,.09);--sh-2:0 10px 30px rgba(11,29,58,.18)}
+:root[data-theme="navy"] body{background-image:none!important}
+:root[data-theme="navy"] .card{box-shadow:var(--sh)!important}
+:root[data-theme="navy"] .sheet.form,:root[data-theme="navy"] .sheet.form.pageform{background:var(--bg)!important;color:var(--tx)!important}
+:root[data-theme="navy"] input,:root[data-theme="navy"] textarea,:root[data-theme="navy"] select{background:#FFFFFF!important;color:#13203A!important;border-color:#DAD6C8!important}
+:root[data-theme="navy"] .bottom-nav button.active::after{background:var(--gold-grad)!important}
+:root[data-theme="navy"] .tag.avail{color:var(--ok)}
+/* نص كبير: أزرار النوافذ تنزل بصفّين بدل ما تطلع برا الشاشة */
+.sheet{overflow-x:hidden}
+:root[data-bigtext] .sheet>.acts{grid-auto-flow:row!important;grid-template-columns:repeat(2,minmax(0,1fr))!important}
+:root[data-bigtext] .sheet>.acts button{min-width:0;padding:0 6px!important;height:auto!important;min-height:50px;white-space:normal;line-height:1.25}
+</style>
 </head>
 <body>
 <div id="app"></div>
 <div id="modal"></div>
 <script>
 const KEY='daftar.aqarati.v1', PIN_KEY='daftar.pin', THEME_KEY='daftar.theme', FAIL_KEY='daftar.pinfail';
-const blank = () => ({ n: 1, hoods: [], props: [], lastBackup: 0, del: {} });
+const blank = () => ({ n: 1, hoods: [], props: [], reqs: [], history: [], lastBackup: 0, del: {} });
 const genUid = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
 const markDel = u => { if (!db.del) db.del = {}; db.del[u] = Date.now(); };
+const logChange = (action, entity, entityUid, summary, details = '') => {
+  if (!Array.isArray(db.history)) db.history = [];
+  db.history.unshift({ uid: 'log:' + genUid(), ts: Date.now(), action: String(action), entity: String(entity), entityUid: String(entityUid || ''), summary: String(summary || ''), details: String(details || '') });
+  db.history = db.history.slice(0, 500);
+};
+
 let db = blank(), persisted = false, unlocked = false, lastHash = null;
 let F = { q: '', hood: 0, status: '', min: '', max: '', sort: 'new' };
 
 /* ===== الثيم ===== */
 function applyTheme() {
-  let saved = localStorage.getItem(THEME_KEY) || 'auto';
-  if (saved === 'light') saved = 'white';
+  /* الثيم الافتراضي: الماروني والأوف وايت (يُطبَّق مرة واحدة ثم يبقى اختيارك المحفوظ) */
+  try { if (!localStorage.getItem('daftar.theme.v2')) { localStorage.setItem('daftar.theme.v2', '1'); localStorage.setItem(THEME_KEY, 'cream'); } } catch (_) {}
+  let saved = 'cream';
+  try { saved = localStorage.getItem(THEME_KEY) || 'cream'; } catch (_) {}
   if (saved === 'dark') saved = 'black';
-  if (saved === 'cream') saved = 'white';
-  if (saved !== (localStorage.getItem(THEME_KEY) || 'auto')) localStorage.setItem(THEME_KEY, saved);
+  if (!['black','cream','white','navy','auto'].includes(saved)) saved = 'cream';
   const root = document.documentElement;
   const mode = saved === 'auto'
     ? ((window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'black' : 'white')
-    : (['black', 'white'].includes(saved) ? saved : 'white');
+    : saved;
   root.setAttribute('data-theme', mode);
   root.style.colorScheme = mode === 'black' ? 'dark' : 'light';
   const meta = document.querySelector('meta[name="theme-color"]');
-  if (meta) meta.content = mode === 'black' ? '#121212' : '#F6F6F6';
+  if (meta) meta.content = mode === 'black' ? '#000000' : (mode === 'cream' ? '#FCF5F1' : mode === 'navy' ? '#F6F3EC' : '#FFFFFF');
 }
 function setTheme(mode) {
-  if (!['black', 'white', 'auto'].includes(mode)) mode = 'white';
-  localStorage.setItem(THEME_KEY, mode); vt(() => { applyTheme(); render(); });
+  if (!['black', 'cream', 'white', 'navy', 'auto'].includes(mode)) mode = 'white';
+  try { localStorage.setItem(THEME_KEY, mode); } catch (_) {}
+  vt(() => { applyTheme(); render(); });
 }
 if (window.matchMedia) {
   const media = window.matchMedia('(prefers-color-scheme: dark)');
-  const f = () => { if ((localStorage.getItem(THEME_KEY) || 'auto') === 'auto') applyTheme(); };
+  const f = () => { let t='auto'; try { t=localStorage.getItem(THEME_KEY)||'cream'; } catch (_) {} if (t === 'auto') applyTheme(); };
   if (media.addEventListener) media.addEventListener('change', f); else if (media.addListener) media.addListener(f);
 }
 applyTheme();
@@ -1074,13 +1335,19 @@ const idbSet = async (k, v) => { const d = await idb(); return new Promise((res,
   const t = d.transaction('kv', 'readwrite'); t.objectStore('kv').put(v, k); t.oncomplete = res; t.onerror = () => rej(t.error); }); };
 
 let saveQueue = Promise.resolve();
+let lsDirty = false, lsTimer = 0, lsOk = true;
+function flushLS() {
+  clearTimeout(lsTimer); if (!lsDirty) return; lsDirty = false;
+  try { localStorage.setItem(KEY, JSON.stringify(db)); lsOk = true; } catch (e) { lsOk = false; try { localStorage.removeItem(KEY); } catch (_) {} }
+}
+addEventListener('pagehide', flushLS);
+document.addEventListener('visibilitychange', () => { if (document.hidden) flushLS(); });
 function save() {
   db.ts = Math.max(Date.now(), (Number(db.ts) || 0) + 1);
-  let okLS = true;
-  try { localStorage.setItem(KEY, JSON.stringify(db)); } catch (e) { okLS = false; try { localStorage.removeItem(KEY); } catch (_) {} }
+  lsDirty = true; clearTimeout(lsTimer); lsTimer = setTimeout(flushLS, 600);
   const snapshot = db;
   saveQueue = saveQueue.then(() => idbSet('db', snapshot)).catch(() => {
-    if (!okLS) alert('تعذّر الحفظ. صدّر نسخة احتياطية فوراً إن أمكن.');
+    if (!lsOk) alert('تعذّر الحفظ. صدّر نسخة احتياطية فوراً إن أمكن.');
   });
   scheduleSync();
   return saveQueue;
@@ -1095,7 +1362,7 @@ function sanitize(d) {
   const props = d.props.filter(p => p && ok(p.id) && !seenP.has(Number(p.id)) && seenP.add(Number(p.id)) && seen.has(Number(p.hood)) && ['AVAILABLE','SOLD'].includes(p.status)).map(p => ({
     id: Number(p.id), uid: String(p.uid ?? ''), ts: Number(p.ts) || 0, hood: Number(p.hood), status: p.status, plot: String(p.plot ?? ''),
     size: Math.max(0, Number(p.size) || 0), price: Math.max(0, Number(p.price) || 0),
-    owner: String(p.owner ?? ''), phone: String(p.phone ?? ''), notes: String(p.notes ?? '')
+    owner: String(p.owner ?? ''), phone: String(p.phone ?? ''), notes: String(p.notes ?? ''), ptype: ['دار', 'أرض زراعية', 'أرض سكنية'].includes(p.ptype) ? p.ptype : ''
   }));
   // معرّف ثابت لكل عنصر. البيانات القديمة بلا معرّف تأخذ معرّفاً من اسمها حتى تتطابق بين الجهازين عند الدمج.
   const uniq = (base, used) => { let u = base, k = 1; while (used.has(u)) u = base + '#' + (++k); used.add(u); return u; };
@@ -1107,12 +1374,22 @@ function sanitize(d) {
   props.forEach(p => { if (!p.uid) p.uid = uniq('p:' + hn(p.hood) + '|' + p.plot, usedP); });
   const del = {};
   if (d.del && typeof d.del === 'object' && !Array.isArray(d.del)) for (const [k, v] of Object.entries(d.del)) if (Number(v) > 0) del[k] = Number(v);
-  const maxId = Math.max(0, ...hoods.map(h => h.id), ...props.map(p => p.id));
-  return { n: Math.max(Number(d.n) || 1, maxId + 1), hoods, props, del, lastBackup: Number(d.lastBackup) || 0, ts: Number(d.ts) || 0 };
+  const seenR = new Set(), usedR = new Set();
+  const reqs = (Array.isArray(d.reqs) ? d.reqs : []).filter(r => r && ok(r.id) && !seenR.has(Number(r.id)) && seenR.add(Number(r.id))).map(r => ({
+    id: Number(r.id), uid: String(r.uid ?? ''), ts: Number(r.ts) || 0, name: String(r.name ?? ''), phone: String(r.phone ?? ''),
+    kind: r.kind === 'RENT' ? 'RENT' : 'BUY', ptype: String(r.ptype ?? ''), hood: String(r.hood ?? ''),
+    size: Math.max(0, Number(r.size) || 0), budget: Math.max(0, Number(r.budget) || 0), notes: String(r.notes ?? ''), status: r.status === 'DONE' ? 'DONE' : 'OPEN'
+  }));
+  reqs.forEach(r => { if (r.uid && !usedR.has(r.uid)) usedR.add(r.uid); else r.uid = ''; });
+  reqs.forEach(r => { if (!r.uid) r.uid = uniq('r:' + r.name + '|' + r.phone, usedR); });
+  const maxId = Math.max(0, ...hoods.map(h => h.id), ...props.map(p => p.id), ...reqs.map(r => r.id));
+  const history = Array.isArray(d.history) ? d.history.filter(x => x && x.uid && Number(x.ts) > 0).map(x => ({ uid:String(x.uid), ts:Number(x.ts), action:String(x.action||''), entity:String(x.entity||''), entityUid:String(x.entityUid||''), summary:String(x.summary||''), details:String(x.details||'') })).sort((a,b)=>b.ts-a.ts).slice(0,500) : [];
+  return { n: Math.max(Number(d.n) || 1, maxId + 1), hoods, props, reqs, history, del, lastBackup: Number(d.lastBackup) || 0, ts: Number(d.ts) || 0 };
 }
 
 /* ===== دمج نسخة واردة مع البيانات الحالية ===== */
 function mergeData(cur, inc) {
+  if (!Array.isArray(cur.reqs)) cur.reqs = [];
   const st = { add: 0, upd: 0, rem: 0 };
   const del = Object.assign({}, cur.del);
   for (const u in inc.del) if (!(del[u] >= inc.del[u])) del[u] = inc.del[u];
@@ -1142,6 +1419,21 @@ function mergeData(cur, inc) {
     if (!lp) { cur.props.push({ ...p, id: cur.n++, hood: hm[ih.id] }); st.add++; }
     else if (p.ts > lp.ts) { Object.assign(lp, p, { id: lp.id, hood: hm[ih.id] }); st.upd++; }
   }
+  // طلبات الزبائن: نفس قاعدة العقارات (الأحدث تعديلاً يفوز)
+  const q0 = cur.reqs.length;
+  cur.reqs = cur.reqs.filter(r => !dead(r.uid, r.ts));
+  st.rem += q0 - cur.reqs.length;
+  for (const r of (inc.reqs || [])) {
+    if (dead(r.uid, r.ts)) continue;
+    const lr = cur.reqs.find(x => x.uid === r.uid);
+    if (!lr) { cur.reqs.push({ ...r, id: cur.n++ }); st.add++; }
+    else if (r.ts > lr.ts) { Object.assign(lr, r, { id: lr.id }); st.upd++; }
+  }
+  // سجل التغييرات يندمج حسب UID مستقل لكل حدث.
+  if (!Array.isArray(cur.history)) cur.history = [];
+  const logs = new Map(cur.history.filter(x => !dead(x.uid, Number(x.ts))).map(x => [x.uid, x]));
+  for (const x of (inc.history || [])) if (x && x.uid && !dead(x.uid, Number(x.ts)) && (!logs.has(x.uid) || Number(x.ts) > Number(logs.get(x.uid).ts))) logs.set(x.uid, x);
+  cur.history = [...logs.values()].sort((a,b)=>Number(b.ts)-Number(a.ts)).slice(0,500);
   cur.del = del;
   return st;
 }
@@ -1219,7 +1511,7 @@ window.addEventListener('hashchange', render);
 function page(title, body, fab, back, showNav, opts) {
   opts = opts || {};
   const lead = back ? `<button class="hb" onclick="goUp()" aria-label="رجوع">${ICO.fwd}</button>` : '';
-  const fl = fab ? (String(fab).indexOf('hoodForm') === 0 ? 'إضافة حي' : 'إضافة عقار') : '';
+  const fl = fab ? (String(fab).indexOf('hoodForm') === 0 ? 'إضافة حي' : String(fab).indexOf('reqForm') === 0 ? 'إضافة طلب' : 'إضافة عقار') : '';
   const hdrHTML = `${lead}<h1>${esc(title)}</h1>${opts.acts || ''}`;
   const fabHTML = fab ? `<button class="b fab" onclick="${fab}" aria-label="${fl}">${ICO.plus}<span>${fl}</span></button>` : '';
   const app = $('app');
@@ -1236,13 +1528,21 @@ function page(title, body, fab, back, showNav, opts) {
     if (!fab) { if (f) f.remove(); }
     else if (!f) app.insertAdjacentHTML('beforeend', fabHTML);
     else if (f.getAttribute('onclick') !== fab) { f.setAttribute('onclick', fab); f.setAttribute('aria-label', fl); f.innerHTML = `${ICO.plus}<span>${fl}</span>`; }
+    const oldNav = app.querySelector(':scope > .bottom-nav');
+    if (!oldNav) app.insertAdjacentHTML('beforeend', bottomNav());
+    else { /* تحديث التبويب النشط فقط دون إعادة بناء الشريط */
+      const t = document.createElement('div'); t.innerHTML = bottomNav();
+      const nb = t.querySelectorAll('.bottom-nav button'), ob = oldNav.querySelectorAll('button');
+      if (nb.length === ob.length) nb.forEach((n, i) => { if (ob[i].className !== n.className) ob[i].className = n.className; });
+      else oldNav.replaceWith(t.firstElementChild);
+    }
     return;
   }
-  app.innerHTML = `<header class="${back ? 'sub' : 'top'}">${hdrHTML}</header>${opts.tabs || ''}<main>${body}</main>${fabHTML}`;
+  app.innerHTML = `<header class="${back ? 'sub' : 'top'}">${hdrHTML}</header>${opts.tabs || ''}<main>${body}</main>${fabHTML}${bottomNav()}`;
 }
-function goUp() { backNav = true; location.hash = ''; }
+function goUp() { backNav = true; const r = location.hash.slice(1).split('/')[0]; location.hash = (r === 'account' || r === 'settings') ? 'more' : ''; }
 function toggleTheme() {
-  const cur = localStorage.getItem(THEME_KEY) || 'auto';
+  const cur = localStorage.getItem(THEME_KEY) || 'cream';
   setTheme(document.documentElement.getAttribute('data-theme') === 'black' ? 'white' : 'black');
 }
 
@@ -1262,7 +1562,7 @@ addEventListener('scroll', () => {
 }, { passive: true });
 function goBack() { backNav = true; history.back(); }
 let lastWorth = 0, swipeIn = '';
-const tabIdx = h => ({ '': 0, hoods: 1, hood: 1, all: 2, settings: 3 })[h.slice(1).split('/')[0]] ?? 0;
+const tabIdx = h => ({ '': 0, hoods: 1, hood: 1, all: 2, reqs: 2.5, more: 3, account: 3, settings: 3 })[h.slice(1).split('/')[0]] ?? 0;
 const reduced = matchMedia('(prefers-reduced-motion: reduce)').matches;
 const vt = (fn, dir) => {
   if (!document.startViewTransition || reduced) { fn(); return false; }
@@ -1298,8 +1598,29 @@ function bottomNav() {
   const cur = location.hash.slice(1).split('/')[0] || 'home';
   const item = (id, label, icon, on) =>
     `<button class="${on ? 'active' : ''}" onclick="go('${id === 'home' ? '' : id}')" aria-label="${label}">${icon}<span>${label}</span></button>`;
-  return `<nav class="bottom-nav">${item('home', 'الرئيسية', ICO.home, cur === 'home')}${item('hoods', 'الأحياء', ICO.folder, cur === 'hoods' || cur === 'hood')}${item('all', 'العقارات', ICO.list, cur === 'all')}${item('settings', 'الإعدادات', ICO.settings, cur === 'settings')}</nav>`;
+  return `<nav class="bottom-nav">${item('home', 'الرئيسية', ICO.home, cur === 'home' || cur === 'hoods' || cur === 'hood')}${item('all', 'العقارات', ICO.list, cur === 'all')}${item('reqs', 'الطلبات', ICO.req, cur === 'reqs')}
+  <button class="menu-trigger ${cur === 'more' || cur === 'account' || cur === 'settings' ? 'active' : ''}" onclick="go('more')" aria-label="المزيد"><svg class="ico" viewBox="0 0 24 24"><circle cx="5" cy="6" r="1"/><circle cx="5" cy="12" r="1"/><circle cx="5" cy="18" r="1"/><path d="M10 6h9M10 12h9M10 18h9"/></svg><span>المزيد</span></button></nav>`;
 }
+function moreView() {
+  const chev = ICO.back2.replace('class="ico"', 'class="ico chev"');
+  const row = (ic, t, fn, sub) => `<div class="card tap menu" tabindex="0" onclick="${fn}" onkeydown="if(event.key==='Enter'){${fn}}">${ic}<div>${t}${sub ? `<div class="mut" style="font-weight:400">${sub}</div>` : ''}</div>${chev}</div>`;
+  const nm = profileName() || (sbUser && sbUser.email) || '';
+  page('المزيد', `
+    ${row(ICO.user, 'حسابي', "go('account')", esc(nm) || 'الاسم والصورة وتسجيل الخروج')}
+    ${row(ICO.settings, 'الإعدادات والدعم', "go('settings')", 'الثيم، النسخ الاحتياطي، المزامنة والحماية')}
+    ${row(ICO.list, 'سجل التغييرات', 'showHistory()', 'آخر الإضافات والتعديلات والبيع')}
+  `, '', false, true);
+}
+function openQuickMenu() {
+  modal(`<div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px"><h2>${ICO.list} القائمة</h2><button class="o" onclick="closeModal()" aria-label="إغلاق">إغلاق</button></div>
+    <button class="menu-choice" onclick="closeModal();go('settings')">${ICO.settings}<span><b>الإعدادات والدعم</b><div class="mut">الثيم، النسخ الاحتياطي، المزامنة والحماية</div></span></button>
+    <button class="menu-choice" onclick="closeModal();go('hoods')">${ICO.folder}<span><b>الأحياء</b><div class="mut">عرض الأحياء وإدارتها</div></span></button>
+    <button class="menu-choice" onclick="closeModal();go('all')">${ICO.bld}<span><b>كل العقارات</b><div class="mut">المتاح والمباع</div></span></button>
+    <button class="menu-choice" onclick="closeModal();go('reqs')">${ICO.req}<span><b>طلبات الزبائن</b><div class="mut">ما يبحث عنه الزبائن والعقارات المطابقة</div></span></button>
+    <button class="menu-choice" onclick="closeModal();showHistory()">${ICO.list}<span><b>سجل التغييرات</b><div class="mut">آخر الإضافات والتعديلات والبيع</div></span></button>
+    <button class="menu-choice" onclick="closeModal();go('account')">${ICO.user}<span><b>حسابي</b><div class="mut">الاسم والصورة وتسجيل الخروج</div></span></button>`, 'menu-sheet');
+}
+
 function render0() {
   const [r, a] = location.hash.slice(1).split('/').map(v => { try { return decodeURIComponent(v); } catch (_) { return v; } });
   closeModal();
@@ -1311,7 +1632,10 @@ function render0() {
   if (r === 'hoods') return hoodsView();
   if (r === 'hood') return hoodView(Number(a));
   if (r === 'all') return allView();
+  if (r === 'reqs') return reqsView();
+  if (r === 'more') return moreView();
   if (r === 'settings') return settingsView();
+  if (r === 'account') return accountView();
   homeView();
 }
 
@@ -1326,7 +1650,7 @@ function lockView() {
   $('app').innerHTML = `
     <div class="lock-screen">
       <div class="logo">${ICO.lock}</div>
-      <h2>دفتر عقاراتي</h2>
+      <h2>منارة الحدباء للأستثمار العقاري</h2>
       <p>أدخل الرقم السري</p>
       <div class="pinmsg" id="pinmsg"></div>
       <div class="pin-display" id="pindisp">${[0,1,2,3].map(i => `<div class="pin-dot" data-i="${i}"></div>`).join('')}</div>
@@ -1340,7 +1664,7 @@ function lockView() {
   pinBuf = '';
   const b = document.createElement('button');
   b.className = 'o'; b.style.cssText = 'position:fixed;top:16px;inset-inline-end:16px;z-index:60';
-  b.innerHTML = (localStorage.getItem(THEME_KEY) || 'auto') === 'black' ? ICO.sun : ICO.moon;
+  b.innerHTML = (localStorage.getItem(THEME_KEY) || 'cream') === 'black' ? ICO.sun : ICO.moon;
   b.setAttribute('aria-label', 'تبديل النمط'); b.onclick = toggleTheme;
   document.querySelector('.lock-screen').appendChild(b);
   pinLockedMsg();
@@ -1378,7 +1702,7 @@ function pinOk() {
 function propCard(p) {
   return `<div class="card tap offer${p.status === 'SOLD' ? ' is-sold' : ''}" tabindex="0" onclick="details(${p.id})" onkeydown="if(event.key==='Enter')details(${p.id})">
     <div class="row"><b>${esc(ptitle(p))}</b><span class="price">${priceTxt(p)}</span></div>
-    <div class="mut">${ICO.pin} ${esc(hoodName(p.hood))}${p.size ? ' • ' + sizeTxt(p) : ''}</div>
+    <div class="mut">${ICO.pin} ${esc(hoodName(p.hood))}${p.ptype ? ' • ' + esc(p.ptype) : ''}${p.size ? ' • ' + sizeTxt(p) : ''}</div>
     <div><span class="tag ${p.status === 'AVAILABLE' ? 'avail' : 'sold'}">${STATUS[p.status]}</span></div>
     ${p.notes ? `<div class="mut" style="overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical">${esc(p.notes)}</div>` : ''}
   </div>`;
@@ -1393,11 +1717,11 @@ function homeView() {
   const days = db.lastBackup ? Math.floor((Date.now() - db.lastBackup) / 864e5) : null;
   const warn = (days === null || days > 7) && db.props.length
     ? `<div class="card tap" style="border-color:var(--warn)" tabindex="0" onclick="go('settings')">${days === null ? 'ما سويت نسخة احتياطية للبيانات بعد.' : 'آخر نسخة احتياطية قبل ' + days + ' يوم.'} اضغط للتصدير.</div>` : '';
-  page('دفتر عقاراتي', `${warn}
-    <div class="sbox">${ICO.search}<input id="hq" type="search" placeholder="البحث" oninput="fillHoods()"></div>
+  page('منارة الحدباء للأستثمار العقاري', `${warn}
+    <div class="home-tools"><div class="sbox">${ICO.search}<input id="hq" type="search" placeholder="البحث عن حي" oninput="dFillHoods()"></div><button class="b home-add" onclick="hoodForm(0)" aria-label="إضافة حي">${ICO.plus}<span>إضافة حي</span></button></div>
     <div id="hl" class="hlist"></div>`,
-    db.hoods.length ? 'hoodForm(0)' : '', false, false,
-    { acts: `<button onclick="go('all')" aria-label="كل العقارات">${ICO.list}</button><button onclick="go('settings')" aria-label="الإعدادات">${ICO.settings}</button>` });
+    '', false, false,
+    { acts: '' });
   fillHoods();
 }
 function hoodsView() { homeView(); }
@@ -1411,16 +1735,102 @@ function fillHoods() {
   }
   $('hl').innerHTML = list.map(h => {
     const av = db.props.filter(p => p.hood === h.id && p.status === 'AVAILABLE').length;
-    return `<div class="hcard tap" tabindex="0" onclick="go('hood/${h.id}')" onkeydown="if(event.key==='Enter')go('hood/${h.id}')"><span class="hi">${ICO.bld}</span><div class="ht"><b>${esc(h.name)}</b><span>${av} عقار متاح</span></div>${chev}</div>`;
+    const acts = `<button class="ed" onclick="hoodSwipeAct('e',${h.id})">${ICO.edit}<span>تعديل</span></button><button class="dl" onclick="hoodSwipeAct('d',${h.id})">${ICO.trash}<span>حذف</span></button>`;
+    return `<div class="hrow" data-id="${h.id}"><div class="hact l">${acts}</div><div class="hact r">${acts}</div><div class="hcard tap" tabindex="0" onclick="go('hood/${h.id}')" onkeydown="if(event.key==='Enter')go('hood/${h.id}')"><span class="hi">${ICO.bld}</span><div class="ht"><b>${esc(h.name)}</b><span>${av} عقار متاح</span></div>${chev}</div></div>`;
   }).join('') || `<div class="empty">لا توجد نتائج.</div>`;
+  initHoodSwipe($('hl'));
+}
+/* ===== سحب الحي: تعديل / حذف ===== */
+const SW_W = 156;
+let swOpen = null;
+function swClose(row) {
+  if (!row) return;
+  const c = row.querySelector('.hcard'); if (c) c.style.transform = '';
+  row.classList.remove('sl', 'sr', 'drag');
+  if (swOpen === row) swOpen = null;
+}
+function hoodMenu(id) {
+  const h = hood(id); if (!h) return;
+  swClose(swOpen);
+  modal(`<h2 class="sh">${esc(h.name)}</h2><div class="opts">
+    <button class="opt" onclick="closeModal();hoodForm(${id})"><span>${ICO.edit} تعديل الحي</span></button>
+    <button class="opt" style="color:var(--dng)" onclick="closeModal();delHood(${id});if($('hl'))fillHoods()"><span>${ICO.trash} حذف الحي</span></button></div>`);
+}
+function hoodSwipeAct(k, id) {
+  swClose(swOpen);
+  if (k === 'e') hoodForm(id);
+  else { delHood(id); if ($('hl')) fillHoods(); }
+}
+function initHoodSwipe(box) {
+  if (!box || box._sw) return;
+  box._sw = true;
+  let row = null, card = null, x0 = 0, y0 = 0, base = 0, mode = 0, moved = false, pid = null, lpT = null, lp = false;
+  const lpClear = () => { if (lpT) { clearTimeout(lpT); lpT = null; } };
+  box.addEventListener('pointerdown', e => {
+    if (e.target.closest('.hact')) return;
+    const r = e.target.closest('.hrow'); if (!r) return;
+    if (swOpen && swOpen !== r) swClose(swOpen);
+    row = r; card = r.querySelector('.hcard');
+    x0 = e.clientX; y0 = e.clientY; mode = 0; moved = false; pid = e.pointerId;
+    base = r.classList.contains('sl') ? SW_W : r.classList.contains('sr') ? -SW_W : 0;
+    lpClear(); lp = false;
+    lpT = setTimeout(() => {
+      lpT = null;
+      if (!row || mode) return;
+      lp = true; moved = true;
+      if (navigator.vibrate) { try { navigator.vibrate(15); } catch (_) {} }
+      hoodMenu(Number(row.dataset.id));
+    }, 500);
+  });
+  box.addEventListener('pointermove', e => {
+    if (!row || e.pointerId !== pid) return;
+    const dx = e.clientX - x0, dy = e.clientY - y0;
+    if (!mode) {
+      if (Math.abs(dx) < 8 && Math.abs(dy) < 8) return;
+      lpClear();
+      if (Math.abs(dy) > Math.abs(dx)) { row = null; return; }
+      mode = 1; moved = true;
+      row.classList.add('drag');
+      try { box.setPointerCapture(pid); } catch (_) {}
+    }
+    const x = Math.max(-SW_W, Math.min(SW_W, base + dx));
+    row.classList.toggle('sl', x > 0); row.classList.toggle('sr', x < 0);
+    card.style.transform = 'translateX(' + x + 'px)';
+  });
+  const end = e => {
+    if (!row || e.pointerId !== pid) return;
+    lpClear();
+    const r = row; row = null;
+    if (lp) { lp = false; setTimeout(() => { moved = false; }, 350); return; }
+    if (mode) {
+      r.classList.remove('drag');
+      const m = new DOMMatrix(getComputedStyle(card).transform), x = m.m41;
+      if (Math.abs(x) > SW_W / 2) {
+        r.classList.toggle('sl', x > 0); r.classList.toggle('sr', x < 0);
+        card.style.transform = 'translateX(' + (x > 0 ? SW_W : -SW_W) + 'px)';
+        swOpen = r;
+      } else swClose(r);
+      setTimeout(() => { moved = false; }, 350);
+    }
+  };
+  box.addEventListener('contextmenu', e => { if (e.target.closest('.hrow')) e.preventDefault(); });
+  box.addEventListener('pointerup', end);
+  box.addEventListener('pointercancel', end);
+  // منع فتح الحي بعد السحب، وإغلاق الصف المفتوح بالضغط عليه
+  box.addEventListener('click', e => {
+    if (moved) { e.stopPropagation(); e.preventDefault(); return; }
+    const r = e.target.closest('.hrow');
+    if (r && !e.target.closest('.hact') && (r.classList.contains('sl') || r.classList.contains('sr'))) {
+      e.stopPropagation(); e.preventDefault(); swClose(r);
+    }
+  }, true);
 }
 function hoodView(id) {
   const h = hood(id);
   if (!h) { go(''); return; }
   if (hoodSeen !== id) { hoodSeen = id; HT = 'AVAILABLE'; HF = { size: 0, sort: 'new' }; }
   const tab = (st, label, ic) => `<button class="${HT === st ? 'on' : ''}" onclick="setHT('${st}',${id})">${ic}<span>${label}</span></button>`;
-  page(h.name, `<div id="hp" class="hlist"></div>
-    <div class="acts"><button class="o" onclick="hoodForm(${id})">${ICO.edit} تعديل الحي</button><button class="o d" onclick="delHood(${id})">${ICO.trash} حذف الحي</button></div>`,
+  page(h.name, `<div id="hp" class="hlist"></div>`,
     `propForm(0,${id})`, true, false,
     { acts: `<button onclick="filterSheet(${id})" aria-label="تصفية حسب المساحة">${ICO.filter}</button><button onclick="sortSheet(${id})" aria-label="الفرز">${ICO.sort}</button>`,
       tabs: `<div class="tabs">${tab('AVAILABLE', 'عقارات متاحة', ICO.avail)}${tab('SOLD', 'عقارات مباعة', ICO.soldic)}</div>` });
@@ -1444,6 +1854,7 @@ function filterSheet(id) {
 }
 
 function hoodForm(id) {
+  if (!id && needLogin()) return;
   const h = id ? hood(id) : { name: '' };
   modal(`<h2 class="hf">${id ? 'تعديل الحي' : 'إضافة حي جديد'}</h2>
     <input id="hn" value="${esc(h.name)}" placeholder="اسم الحي">
@@ -1451,18 +1862,19 @@ function hoodForm(id) {
   $('hn').focus();
 }
 function saveHood(id) {
+  if (!id && needLogin()) { closeModal(); return; }
   const name = val('hn');
   if (!name) return alert('اكتب اسم الحي.');
   if (db.hoods.some(h => h.id !== id && h.name === name)) return alert('هذا الحي موجود مسبقاً.');
-  if (id) { const h = hood(id); if (!h) return alert('الحي غير موجود؛ حدّث الصفحة وحاول مجدداً.'); h.name = name; h.ts = Date.now(); }
-  else db.hoods.push({ id: db.n++, uid: genUid(), ts: Date.now(), name });
+  if (id) { const h = hood(id); if (!h) return alert('الحي غير موجود؛ حدّث الصفحة وحاول مجدداً.'); const oldName = h.name; h.name = name; h.ts = Date.now(); logChange('تعديل', 'حي', h.uid, 'تعديل اسم حي: ' + oldName + ' ← ' + name); }
+  else { const h = { id: db.n++, uid: genUid(), ts: Date.now(), name }; db.hoods.push(h); logChange('إضافة', 'حي', h.uid, 'إضافة حي: ' + name); }
   save(); closeModal(); render();
 }
 function delHood(id) {
   const n = db.props.filter(p => p.hood === id).length;
   if (!confirm(n ? 'حذف هذا الحي مع ' + n + ' عقار بداخله؟' : 'حذف هذا الحي؟')) return;
-  const h = hood(id); if (h) markDel(h.uid);
-  db.props.filter(p => p.hood === id).forEach(p => markDel(p.uid));
+  const h = hood(id); if (h) { markDel(h.uid); logChange('حذف', 'حي', h.uid, 'حذف حي: ' + h.name); }
+  db.props.filter(p => p.hood === id).forEach(p => { markDel(p.uid); logChange('حذف', 'عقار', p.uid, 'حذف عقار ' + ptitle(p) + ' مع الحي ' + (h ? h.name : '')); });
   db.hoods = db.hoods.filter(h => h.id !== id); db.props = db.props.filter(p => p.hood !== id);
   save(); go('hoods');
 }
@@ -1473,15 +1885,15 @@ function allView() {
   const title = F.status === 'SOLD' ? 'العقارات المباعة' : F.status === 'AVAILABLE' ? 'العقارات المتاحة' : 'كل العقارات';
   const hoods = [...db.hoods].sort((a, b) => a.name.localeCompare(b.name, 'ar'));
   page(title, `
-    <input id="fq" type="search" placeholder="ابحث برقم القطعة أو الحي أو المالك أو الهاتف" value="${esc(F.q)}" oninput="F.q=this.value;fillAll()">
+    <input id="fq" type="search" placeholder="ابحث برقم القطعة أو الحي أو المالك أو الهاتف" value="${esc(F.q)}" oninput="F.q=this.value;dFillAll()">
     <div class="fl">
       <select aria-label="الحي" onchange="F.hood=Number(this.value);fillAll()">${opt(0, 'كل الأحياء', F.hood)}${hoods.map(h => opt(h.id, h.name, F.hood)).join('')}</select>
       <select aria-label="الحالة" onchange="F.status=this.value;fillAll()">${opt('', 'كل الحالات', F.status)}${opt('AVAILABLE', 'متاح', F.status)}${opt('SOLD', 'مباع', F.status)}</select>
       <select aria-label="الترتيب" onchange="F.sort=this.value;fillAll()">${opt('new', 'الأحدث', F.sort)}${opt('low', 'الأرخص', F.sort)}${opt('high', 'الأغلى', F.sort)}${opt('size', 'الأكبر مساحة', F.sort)}</select>
     </div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px">
-      <input type="number" inputmode="decimal" placeholder="السعر من" value="${esc(F.min)}" oninput="F.min=this.value;fillAll()">
-      <input type="number" inputmode="decimal" placeholder="السعر إلى" value="${esc(F.max)}" oninput="F.max=this.value;fillAll()">
+      <input type="number" inputmode="decimal" placeholder="السعر من" value="${esc(F.min)}" oninput="F.min=this.value;dFillAll()">
+      <input type="number" inputmode="decimal" placeholder="السعر إلى" value="${esc(F.max)}" oninput="F.max=this.value;dFillAll()">
     </div>
     <div id="res" style="display:grid;gap:10px"></div>`, 'addProp()', true);
   fillAll();
@@ -1489,7 +1901,7 @@ function allView() {
 function fillAll() {
   const q = F.q.trim().toLowerCase(), mn = F.min === '' ? null : Number(F.min), mx = F.max === '' ? null : Number(F.max);
   const list = db.props.filter(p => {
-    const hay = [p.plot, hoodName(p.hood), p.owner, p.phone, p.notes].join(' ').toLowerCase();
+    const hay = [p.plot, hoodName(p.hood), p.ptype, p.owner, p.phone, p.notes].join(' ').toLowerCase();
     return (!q || hay.includes(q)) && (!F.hood || p.hood === F.hood) && (!F.status || p.status === F.status)
       && (mn === null || p.price >= mn) && (mx === null || p.price <= mx);
   }).sort((a, b) => F.sort === 'low' ? a.price - b.price : F.sort === 'high' ? b.price - a.price : F.sort === 'size' ? b.size - a.size : b.id - a.id);
@@ -1505,6 +1917,7 @@ function priceHint() {
   h.textContent = n >= 1e6 ? (+(n / 1e6).toFixed(2)) + ' مليون د.ع' : n ? money(n) + ' د.ع' : '';
 }
 function propForm(id, hid) {
+  if (!id && needLogin()) return;
   if (!db.hoods.length) return hoodForm(0);
   const p = id ? prop(id) : { hood: hid || db.hoods[0].id, plot: '', size: '', price: '', owner: '', phone: '', notes: '' };
   const hoodField = (hid && !id)
@@ -1513,6 +1926,7 @@ function propForm(id, hid) {
   modal(`<div class="fhead pg"><button class="x" type="button" onclick="closeModal()" aria-label="رجوع">${ICO.fwd}</button><h3>${id ? 'تعديل العقار' : 'إضافة عقار جديد'}</h3></div>
     <div class="fbody">
       ${hoodField}
+      <label class="fld sel"><span>نوع العقار</span><select id="pt">${p.ptype ? '' : (id ? '<option value="" selected>غير محدد</option>' : '')}${PTYPES.map(t => `<option value="${t}"${t === p.ptype || (!id && t === 'دار') ? ' selected' : ''}>${t}</option>`).join('')}</select></label>
       <label class="fld"><span>رقم القطعة *</span><input id="pn" value="${esc(p.plot)}"></label>
       <label class="fld"><span>اسم المالك</span><input id="po" value="${esc(p.owner)}"></label>
       <label class="fld"><span>رقم الهاتف</span><input id="ph" type="tel" value="${esc(p.phone)}"></label>
@@ -1527,6 +1941,7 @@ function propForm(id, hid) {
 }
 
 function saveProp(id) {
+  if (!id && needLogin()) { closeModal(); return; }
   const hid = Number(val('pk'));
   if (!hood(hid)) return alert('اختر الحي.');
   if (!val('pn')) return alert('اكتب رقم القطعة.');
@@ -1535,8 +1950,9 @@ function saveProp(id) {
   if (!Number.isFinite(price) || price < 0) return alert('السعر لازم يكون رقماً صحيحاً غير سالب.');
   if (!Number.isFinite(size) || size < 0) return alert('المساحة لازم تكون رقماً صحيحاً غير سالب.');
   if (id && !prop(id)) return alert('العقار غير موجود؛ حدّث الصفحة وحاول مجدداً.');
-  const d = { hood: hid, plot: val('pn'), size, price, owner: val('po'), phone: val('ph'), notes: val('pd'), ts: Date.now() };
-  if (id) Object.assign(prop(id), d); else db.props.push({ id: db.n++, uid: genUid(), status: 'AVAILABLE', ...d });
+  const d = { hood: hid, plot: val('pn'), size, price, owner: val('po'), phone: val('ph'), notes: val('pd'), ptype: val('pt'), ts: Date.now() };
+  if (id) { const old = prop(id); const before = ptitle(old) + ' — ' + hoodName(old.hood) + ' — ' + priceTxt(old); Object.assign(old, d); logChange('تعديل', 'عقار', old.uid, 'تعديل ' + ptitle(old), 'قبل: ' + before + ' | بعد: ' + ptitle(old) + ' — ' + hoodName(old.hood) + ' — ' + priceTxt(old)); }
+  else { const created = { id: db.n++, uid: genUid(), status: 'AVAILABLE', ...d }; db.props.push(created); logChange('إضافة', 'عقار', created.uid, 'إضافة ' + ptitle(created), hoodName(created.hood) + ' | ' + priceTxt(created)); }
   save(); closeModal(); render();
 }
 
@@ -1547,6 +1963,7 @@ function details(id) {
     : `<button class="b" onclick="unsell(${id})">${ICO.back2} إرجاع إلى المتاح</button>`;
   modal(`<h2>${esc(ptitle(p))}</h2>
     <div class="mut">${ICO.pin} ${esc(hoodName(p.hood))}</div>
+    ${p.ptype ? `<div>نوع العقار: <b>${esc(p.ptype)}</b></div>` : ''}
     <div><span class="tag ${p.status === 'AVAILABLE' ? 'avail' : 'sold'}">${STATUS[p.status]}</span></div>
     <div>السعر: <b>${priceTxt(p)}</b></div>
     ${p.size ? `<div>المساحة: <b>${sizeTxt(p)}</b></div>` : ''}
@@ -1554,31 +1971,247 @@ function details(id) {
     ${p.owner || p.phone ? `<div class="mut">${ICO.user} المالك: ${esc(p.owner)}</div>` : ''}
     ${p.phone ? `<a class="b big-call" href="${esc(telHref(p.phone))}">${ICO.phone} اتصال ${esc(p.phone)}</a>` : ''}
     <div class="acts">${act}
+      <button class="o" onclick="sharePropWhatsApp(${id})">مشاركة واتساب</button>
       <button class="o" onclick="propForm(${id})">${ICO.edit} تعديل</button>
       <button class="o d" onclick="delProp(${id})">${ICO.trash} حذف</button>
     </div>
     <button class="o" onclick="closeModal()">إغلاق</button>`);
 }
 
+function sharePropWhatsApp(id) {
+  const p = prop(id); if (!p) return;
+  const msg = [
+    '🏡 منارة الحدباء للأستثمار العقاري',
+    'العقار: ' + ptitle(p),
+    'الحي: ' + hoodName(p.hood),
+    p.ptype ? 'نوع العقار: ' + p.ptype : '',
+    'الحالة: ' + (STATUS[p.status] || p.status),
+    p.size ? 'المساحة: ' + sizeTxt(p) : '',
+    'السعر: ' + priceTxt(p),
+    p.owner ? 'المالك: ' + p.owner : '',
+    p.phone ? 'للتواصل: ' + p.phone : '',
+    p.notes ? 'ملاحظات: ' + p.notes : ''
+  ].filter(Boolean).join('\n');
+  logChange('مشاركة', 'عقار', p.uid, 'مشاركة ' + ptitle(p) + ' عبر واتساب'); save();
+  window.open('https://wa.me/?text=' + encodeURIComponent(msg), '_blank', 'noopener');
+}
+function showHistory() {
+  const items = (db.history || []).slice().sort((a,b)=>b.ts-a.ts).slice(0,150);
+  const body = items.length ? items.map(x => `<div class="card" style="display:grid;gap:4px"><div class="row"><b>${esc(x.summary)}</b><span class="tag">${esc(x.action)}</span></div><div class="mut">${esc(x.entity)} • ${new Date(x.ts).toLocaleString('ar-IQ')}</div>${x.details ? `<div class="mut">${esc(x.details)}</div>` : ''}</div>`).join('') : '<div class="empty">ماكو تغييرات مسجلة بعد.</div>';
+  modal(`<h2>سجل التغييرات</h2><div class="mut" style="margin-bottom:10px">آخر 150 حدثاً محفوظاً من أصل 500 كحد أقصى.</div><div style="display:grid;gap:8px;max-height:60vh;overflow:auto">${body}</div><div class="acts">${items.length ? '<button class="o d" onclick="clearHistory()">حذف السجل</button>' : ''}<button class="o" onclick="closeModal()">إغلاق</button></div>`);
+}
+function clearHistory() {
+  const n = (db.history || []).length; if (!n) return;
+  if (!confirm('حذف كل سجل التغييرات (' + n + ' حدث)؟ ما يمكن التراجع عن هذا، ولن يؤثر على العقارات أو الأحياء أو الطلبات.')) return;
+  db.history.forEach(x => markDel(x.uid));
+  db.history = [];
+  save(); showHistory();
+}
+
 function delProp(id) {
   if (!confirm('حذف هذا العرض؟')) return;
-  const p = prop(id); if (p) markDel(p.uid);
+  const p = prop(id); if (p) { markDel(p.uid); logChange('حذف', 'عقار', p.uid, 'حذف ' + ptitle(p), hoodName(p.hood) + ' | ' + priceTxt(p)); }
   db.props = db.props.filter(p => p.id !== id); save(); closeModal(); render();
 }
 function sold(id) {
   const p = prop(id); if (!p || p.status !== 'AVAILABLE') return;
   if (!confirm('تأكيد نقل العرض إلى المباع؟')) return;
-  p.status = 'SOLD'; p.ts = Date.now(); save(); closeModal(); render();
+  p.status = 'SOLD'; p.ts = Date.now(); logChange('بيع', 'عقار', p.uid, 'نقل ' + ptitle(p) + ' إلى المباع', hoodName(p.hood) + ' | ' + priceTxt(p)); save(); closeModal(); render();
 }
 function unsell(id) {
   const p = prop(id); if (!p || p.status !== 'SOLD') return;
   if (!confirm('إرجاع العرض إلى المتاح؟')) return;
-  p.status = 'AVAILABLE'; p.ts = Date.now(); save(); closeModal(); render();
+  p.status = 'AVAILABLE'; p.ts = Date.now(); logChange('إرجاع للمتاح', 'عقار', p.uid, 'إرجاع ' + ptitle(p) + ' إلى المتاح'); save(); closeModal(); render();
 }
+Object.assign(ICO, {
+  req: '<svg class="ico" viewBox="0 0 24 24"><rect x="5" y="4" width="14" height="17" rx="2"/><path d="M9 4h6v3H9z"/><path d="M8.5 12h7M8.5 16h5"/></svg>'
+});
+
+/* ===== طلبات الزبائن ===== */
+let RQ = { q: '', st: 'OPEN' };
+const PTYPES = ['دار', 'أرض زراعية', 'أرض سكنية'];
+const RK = { BUY: 'شراء', RENT: 'إيجار' };
+const RTYPES = ['أرض', 'دار', 'شقة', 'أخرى'];
+const reqObj = id => (db.reqs || []).find(r => r.id === id);
+const reqTitle = r => r.name || 'زبون';
+function reqMatches(r) {
+  const h = (r.hood || '').trim().toLowerCase();
+  if (!h && !r.budget && !r.size) return [];
+  return db.props.filter(p => p.status === 'AVAILABLE'
+    && (!h || hoodName(p.hood).toLowerCase().includes(h))
+    && (!r.budget || (p.price > 0 && p.price <= r.budget))
+    && (!r.size || p.size >= r.size));
+}
+function reqCard(r) {
+  const m = r.status === 'OPEN' ? reqMatches(r).length : 0;
+  const want = [RK[r.kind] + (r.ptype ? ' ' + r.ptype : ''), r.hood ? 'في ' + r.hood : '', r.size ? 'من ' + money(r.size) + ' م²' : '', r.budget ? 'سعر الطلب ' + money(r.budget) + ' د.ع' : ''].filter(Boolean).join(' • ');
+  return `<div class="card tap offer${r.status === 'DONE' ? ' is-sold' : ''}" tabindex="0" onclick="reqDetails(${r.id})" onkeydown="if(event.key==='Enter')reqDetails(${r.id})">
+    <div class="row"><b>${esc(reqTitle(r))}</b><span class="tag ${r.status === 'OPEN' ? 'avail' : 'sold'}">${r.status === 'OPEN' ? 'قيد البحث' : 'تم التوفير'}</span></div>
+    <div class="mut">${esc(want)}</div>
+    ${r.phone ? `<div class="mut">${ICO.phone} ${esc(r.phone)}</div>` : ''}
+    ${m ? `<div class="mut" style="color:var(--ok);font-weight:600">${m} عقار متاح مطابق</div>` : ''}
+    ${r.notes ? `<div class="mut" style="overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical">${esc(r.notes)}</div>` : ''}
+  </div>`;
+}
+function reqsView() {
+  const tab = (st, label, ic) => `<button class="${RQ.st === st ? 'on' : ''}" onclick="setRQ('${st}')">${ic}<span>${label}</span></button>`;
+  page('طلبات الزبائن', `<div class="home-tools"><div class="sbox">${ICO.search}<input id="rq" type="search" placeholder="ابحث باسم الزبون أو الهاتف أو الحي" value="${esc(RQ.q)}" oninput="RQ.q=this.value;dFillReqs()"></div><button class="b home-add" onclick="reqForm(0)" aria-label="إضافة طلب">${ICO.plus}<span>إضافة طلب</span></button></div>
+    <div id="rl" class="hlist"></div>`, '', false, false,
+    { tabs: `<div class="tabs">${tab('OPEN', 'قيد البحث', ICO.avail)}${tab('DONE', 'تم التوفير', ICO.soldic)}</div>` });
+  fillReqs();
+}
+function setRQ(st) { RQ.st = st; reqsView(); }
+function fillReqs() {
+  const q = RQ.q.trim().toLowerCase();
+  const list = (db.reqs || []).filter(r => r.status === RQ.st && (!q || [r.name, r.phone, r.hood, r.ptype, r.notes].join(' ').toLowerCase().includes(q))).sort((a, b) => b.ts - a.ts);
+  $('rl').innerHTML = list.length ? list.map(reqCard).join('') : `<div class="empty-doc" style="grid-column:1/-1">${ICO.doc}<p>${q ? 'ما أكو نتائج.' : RQ.st === 'OPEN' ? 'لا توجد طلبات زبائن بعد' : 'لا توجد طلبات منجزة'}</p></div>`;
+}
+function reqForm(id) {
+  if (!id && needLogin()) return;
+  const r = id ? reqObj(id) : { name: '', phone: '', kind: 'BUY', ptype: 'أرض', hood: '', size: '', budget: '', notes: '' };
+  if (!r) return;
+  modal(`<div class="fhead pg"><button class="x" type="button" onclick="closeModal()" aria-label="رجوع">${ICO.fwd}</button><h3>${id ? 'تعديل الطلب' : 'إضافة طلب زبون'}</h3></div>
+    <div class="fbody">
+      <label class="fld"><span>اسم الزبون *</span><input id="rn" value="${esc(r.name)}"></label>
+      <label class="fld"><span>رقم الهاتف</span><input id="rp" type="tel" value="${esc(r.phone)}"></label>
+      <div class="row2">
+        <label class="fld sel"><span>نوع الطلب</span><select id="rk"><option value="BUY" selected>شراء</option></select></label>
+        <label class="fld sel"><span>نوع العقار</span><select id="rt">${RTYPES.map(t => `<option value="${t}"${t === r.ptype ? ' selected' : ''}>${t}</option>`).join('')}</select></label>
+      </div>
+      <label class="fld"><span>الحي المطلوب</span><input id="rh" list="rhl" value="${esc(r.hood)}"><datalist id="rhl">${db.hoods.map(h => `<option value="${esc(h.name)}">`).join('')}</datalist></label>
+      <div class="row2">
+        <label class="fld"><span>المساحة من (م²)</span><input id="rs" type="number" inputmode="decimal" value="${esc(r.size || '')}"></label>
+        <label class="fld"><span>سعر الطلب (د.ع)</span><input id="rb" type="number" inputmode="decimal" value="${esc(r.budget || '')}" oninput="reqPriceHint()"><small class="hint" id="rbh"></small></label>
+      </div>
+      <label class="fld ta"><span>ملاحظات</span><textarea id="rd" rows="4">${esc(r.notes)}</textarea></label>
+    </div>
+    <div class="ffoot one"><button class="b" onclick="saveReq(${id})">حفظ الطلب</button></div>`, 'form pageform');
+  reqPriceHint();
+}
+function reqPriceHint() {
+  const h = $('rbh'); if (!h) return;
+  const n = Number($('rb').value) || 0;
+  h.textContent = n >= 1e6 ? (+(n / 1e6).toFixed(2)) + ' مليون د.ع' : n ? money(n) + ' د.ع' : '';
+}
+function saveReq(id) {
+  if (!id && needLogin()) { closeModal(); return; }
+  const name = val('rn');
+  if (!name) return alert('اكتب اسم الزبون.');
+  const num = s => s === '' ? 0 : Number(s);
+  const size = num(val('rs')), budget = num(val('rb'));
+  if (!Number.isFinite(size) || size < 0) return alert('المساحة لازم تكون رقماً صحيحاً غير سالب.');
+  if (!Number.isFinite(budget) || budget < 0) return alert('سعر الطلب لازم يكون رقماً صحيحاً غير سالب.');
+  const d = { name, phone: val('rp'), kind: 'BUY', ptype: val('rt'), hood: val('rh'), size, budget, notes: val('rd'), ts: Date.now() };
+  if (!db.reqs) db.reqs = [];
+  if (id) {
+    const r = reqObj(id); if (!r) return alert('الطلب غير موجود؛ حدّث الصفحة وحاول مجدداً.');
+    Object.assign(r, d); logChange('تعديل', 'طلب', r.uid, 'تعديل طلب ' + name);
+  } else {
+    const r = { id: db.n++, uid: genUid(), status: 'OPEN', ...d };
+    db.reqs.push(r); logChange('إضافة', 'طلب', r.uid, 'إضافة طلب ' + name, RK[r.kind] + (r.hood ? ' | ' + r.hood : ''));
+  }
+  save(); closeModal(); render();
+}
+function reqDetails(id) {
+  const r = reqObj(id); if (!r) return;
+  const ms = r.status === 'OPEN' ? reqMatches(r) : [];
+  const act = r.status === 'OPEN'
+    ? `<button class="b" onclick="reqDone(${id})">${ICO.check} تم التوفير</button>`
+    : `<button class="b" onclick="reqReopen(${id})">${ICO.back2} إعادة فتح الطلب</button>`;
+  modal(`<h2>${esc(reqTitle(r))}</h2>
+    <div><span class="tag ${r.status === 'OPEN' ? 'avail' : 'sold'}">${r.status === 'OPEN' ? 'قيد البحث' : 'تم التوفير'}</span></div>
+    <div>الطلب: <b>${RK[r.kind]}${r.ptype ? ' ' + esc(r.ptype) : ''}</b></div>
+    ${r.hood ? `<div class="mut">${ICO.pin} ${esc(r.hood)}</div>` : ''}
+    ${r.size ? `<div>المساحة المطلوبة: <b>من ${money(r.size)} م²</b></div>` : ''}
+    ${r.budget ? `<div>سعر الطلب: <b>${money(r.budget)} د.ع</b></div>` : ''}
+    ${r.notes ? `<div style="white-space:pre-wrap">${esc(r.notes)}</div>` : ''}
+    ${r.phone ? `<a class="b big-call" href="${esc(telHref(r.phone))}">${ICO.phone} اتصال ${esc(r.phone)}</a>` : ''}
+    ${ms.length ? `<div><b>عقارات متاحة مطابقة (${ms.length})</b></div><div style="display:grid;gap:8px;max-height:30vh;overflow:auto">${ms.slice(0, 20).map(propCard).join('')}</div>` : ''}
+    <div class="acts">${act}
+      <button class="o" onclick="reqForm(${id})">${ICO.edit} تعديل</button>
+      <button class="o d" onclick="delReq(${id})">${ICO.trash} حذف</button>
+    </div>
+    <button class="o" onclick="closeModal()">إغلاق</button>`);
+}
+function reqDone(id) {
+  const r = reqObj(id); if (!r || r.status !== 'OPEN') return;
+  if (!confirm('تأكيد: تم توفير طلب هذا الزبون؟')) return;
+  r.status = 'DONE'; r.ts = Date.now(); logChange('توفير', 'طلب', r.uid, 'تم توفير طلب ' + r.name); save(); closeModal(); render();
+}
+function reqReopen(id) {
+  const r = reqObj(id); if (!r || r.status !== 'DONE') return;
+  if (!confirm('إعادة فتح هذا الطلب؟')) return;
+  r.status = 'OPEN'; r.ts = Date.now(); logChange('إعادة فتح', 'طلب', r.uid, 'إعادة فتح طلب ' + r.name); save(); closeModal(); render();
+}
+function delReq(id) {
+  const r = reqObj(id); if (!r) return;
+  if (!confirm('حذف طلب هذا الزبون؟')) return;
+  markDel(r.uid); logChange('حذف', 'طلب', r.uid, 'حذف طلب ' + r.name);
+  db.reqs = db.reqs.filter(x => x.id !== id); save(); closeModal(); render();
+}
+
+/* ===== صفحة الحساب ===== */
+const PROFILE_NAME_KEY = 'daftar.profile.name';
+const PROFILE_PHOTO_KEY = 'daftar.profile.photo';
+function profileName() {
+  try { return localStorage.getItem(PROFILE_NAME_KEY) || (sbUser && sbUser.user_metadata && (sbUser.user_metadata.name || sbUser.user_metadata.full_name)) || ''; } catch(e) { return ''; }
+}
+function profilePhoto() { try { return localStorage.getItem(PROFILE_PHOTO_KEY) || ''; } catch(e) { return ''; } }
+function accountView() {
+  const name = profileName(), photo = profilePhoto(), email = sbUser && sbUser.email ? sbUser.email : '';
+  const initials = esc((name || email || 'ح').trim().charAt(0).toUpperCase());
+  const avatar = photo ? `<img src="${photo}" alt="الصورة الشخصية">` : initials;
+  page('حسابي', `
+    <section class="card account-hero">
+      <div class="profile-avatar" id="profileAvatar">${avatar}</div>
+      <h2>${esc(name || 'اسم حسابك')}</h2>
+      <div class="mut">${email ? esc(email) : 'حساب محلي على هذا الجهاز'}</div>
+      <div class="acts" style="justify-content:center"><button class="o" onclick="document.getElementById('profilePhotoInput').click()">${ICO.img} تغيير الصورة</button><button class="o" onclick="removeProfilePhoto()">إزالة الصورة</button></div>
+      <input id="profilePhotoInput" type="file" accept="image/*" hidden onchange="saveProfilePhoto(this.files[0])">
+    </section>
+    <section class="card" style="display:grid;gap:12px">
+      <h2>${ICO.user} معلومات الحساب</h2>
+      <label>الاسم الذي يظهر بالتطبيق<input id="profileNameInput" maxlength="60" value="${esc(name)}" placeholder="اكتب اسمك"></label>
+      <button class="b" onclick="saveProfileName()">${ICO.check} حفظ الاسم</button>
+    </section>
+    <section class="card" style="display:grid;gap:10px">
+      <h2>${ICO.lock} الأمان وتسجيل الدخول</h2>
+      ${email ? `<div class="mut">الحساب السحابي: <span style="direction:ltr;display:inline-block">${esc(email)}</span></div><div class="mut">بيانات العقارات المحلية تبقى على هذا الجهاز عند تسجيل الخروج.</div><button class="o d" onclick="doSignOut()">${ICO.close} تسجيل الخروج</button>` : `<div class="mut">ما مسجل دخول بحساب سحابي حالياً. تگدر تسجل دخول حتى تستخدم المزامنة إذا كانت مهيّأة.</div><button class="b" onclick="loginModal()">${ICO.user} تسجيل الدخول / إنشاء حساب</button>`}
+    </section>
+    <button class="o" onclick="go('settings')">${ICO.settings} الإعدادات والدعم</button>
+  `, '', true);
+}
+function saveProfileName() {
+  const name = val('profileNameInput').trim();
+  if (name.length < 2) return alert('اكتب اسم من حرفين على الأقل.');
+  try { localStorage.setItem(PROFILE_NAME_KEY, name); } catch(e) { return alert('ما كدرت أحفظ الاسم على الجهاز.'); }
+  if (sbUser && sb) sb.auth.updateUser({ data: { ...(sbUser.user_metadata || {}), name } }).then(({data,error}) => { if (!error && data && data.user) sbUser = data.user; }).catch(()=>{});
+  render();
+}
+function saveProfilePhoto(file) {
+  if (!file) return;
+  if (!file.type || !file.type.startsWith('image/')) return alert('اختار ملف صورة.');
+  if (file.size > 5 * 1024 * 1024) return alert('الصورة كبيرة؛ اختار صورة أقل من 5 ميغابايت.');
+  const reader = new FileReader();
+  reader.onload = () => {
+    const img = new Image();
+    img.onload = () => {
+      const canvas = document.createElement('canvas'); const max = 420; const scale = Math.min(1, max / Math.max(img.width, img.height));
+      canvas.width = Math.max(1, Math.round(img.width * scale)); canvas.height = Math.max(1, Math.round(img.height * scale));
+      canvas.getContext('2d').drawImage(img, 0, 0, canvas.width, canvas.height);
+      try { localStorage.setItem(PROFILE_PHOTO_KEY, canvas.toDataURL('image/jpeg', .82)); render(); }
+      catch(e) { alert('ما كدرت أحفظ الصورة؛ جرّب صورة أصغر.'); }
+    };
+    img.onerror = () => alert('تعذّر قراءة الصورة.'); img.src = reader.result;
+  };
+  reader.onerror = () => alert('تعذّر قراءة الملف.'); reader.readAsDataURL(file);
+}
+function removeProfilePhoto() { try { localStorage.removeItem(PROFILE_PHOTO_KEY); } catch(e) {} render(); }
+
 /* ===== الإعدادات ===== */
 function settingsView() {
-  const cur = localStorage.getItem(THEME_KEY) || 'auto';
-  const isDark = document.documentElement.getAttribute('data-theme') === 'black';
+  let cur = localStorage.getItem(THEME_KEY) || 'cream';
+  if (cur === 'dark') cur = 'black';
   const hasPinNow = hasPin();
   const days = db.lastBackup ? Math.floor((Date.now() - db.lastBackup) / 864e5) : null;
   const good = days !== null && days <= 7;
@@ -1594,8 +2227,16 @@ function settingsView() {
     </div>
     ${syncCard()}
     <h2 class="sec">إعدادات التطبيق</h2>
-    <div class="card setrow">${ICO.moon}<b>الوضع الليلي</b>${sw(isDark, "setTheme('" + (isDark ? 'white' : 'black') + "')", 'الوضع الليلي')}</div>
-    <div class="card setrow">${ICO.auto}<b>اتباع نمط الجهاز</b>${sw(cur === 'auto', "setTheme('" + (cur === 'auto' ? (isDark ? 'black' : 'white') : 'auto') + "')", 'تلقائي')}</div>
+    <div class="card" style="display:grid;gap:10px">
+      <b>الثيم والمظهر</b><div class="mut">اختَر اللون الذي يناسبك، وسيبقى محفوظاً عند فتح التطبيق مرة ثانية.</div>
+      <div class="theme-toggle" style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px">
+        ${[['cream','ماروني وأوف وايت'],['white','أبيض وأحمر'],['navy','كحلي وذهبي'],['black','أسود وأبيض']].map(([k,t])=>`<button class="${cur===k?'b':'o'}" style="justify-content:center;min-height:44px" aria-pressed="${cur===k}" onclick="setTheme('${k}')">${k==='black'?'● ':k==='cream'?'◐ ':k==='navy'?'◆ ':'○ '}${t}</button>`).join('')}
+      </div>
+    </div>
+    <div class="card setrow">${ICO.list}<b>السحب للتنقل بين الصفحات</b>${sw(tabSwipeOn(), 'toggleTabSwipe()', 'السحب للتنقل')}</div>
+    <div class="card" style="display:grid;gap:12px"><b>الأحجام</b><div class="mut">كبّر النص أو الأيقونات أو بطاقات الأحياء حسب راحتك. يتطبق فوراً ويبقى محفوظاً.</div>
+      ${[['fs', 'حجم النص'], ['is', 'حجم الأيقونات'], ['hs', 'حجم بطاقات الأحياء']].map(([k, l]) => `<div style="display:grid;gap:6px"><span class="mut" style="font-weight:600">${l}</span><div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px">${['عادي', 'كبير', 'أكبر'].map((t, i) => `<button class="${scaleIdx(k) === i ? 'b' : 'o'}" style="justify-content:center;min-height:44px" aria-pressed="${scaleIdx(k) === i}" onclick="setScale('${k}',${i})">${t}</button>`).join('')}</div></div>`).join('')}
+    </div>
     <div class="card"><b>وجه العرض</b><div class="mut" style="margin:2px 0 10px">اختر شكل التطبيق: تلقائي، تلفون، أو لابتوب (يعيد تحميل الصفحة).</div>
       <div style="display:flex;gap:8px">${[['auto', 'تلقائي'], ['phone', 'تلفون'], ['laptop', 'لابتوب']].map(([k, t]) => `<button class="${(window.__view || 'auto') === k ? 'b' : 'o'}" style="flex:1;justify-content:center" onclick="setView('${k}')">${t}</button>`).join('')}</div></div>
     <h2 class="sec">الحماية</h2>
@@ -1603,11 +2244,13 @@ function settingsView() {
       ? row(ICO.edit, 'تغيير الرقم السري', 'changePinForm()') + row(ICO.trash, 'إزالة القفل', 'removePinConfirm()')
       : row(ICO.lock, 'تفعيل القفل', 'setPinForm()', 'غير مفعّل')}
     <h2 class="sec">حول التطبيق</h2>
-    <div class="card mut">${ICO.info} البيانات تُحفظ على هذا الجهاز داخل المتصفح. قد تضيع عند مسح بيانات المتصفح أو نقل الملف أو فقدان الجهاز؛ صدّر نسخة احتياطية بانتظام.<br>التخزين الدائم: ${persisted ? '<span class="ok">مفعّل</span>' : 'غير مضمون من المتصفح'}<br><b>ملاحظة:</b> قفل الـPIN حاجز بسيط داخل الواجهة وليس تشفيراً للبيانات.<br><br>لمزامنة جهازين: صدّر نسخة من الجهاز الأول، واستوردها في الثاني واختر <b>دمج</b>، أو سجّل الدخول للمزامنة السحابية.</div>
+    <div class="card mut">${ICO.info} البيانات تُحفظ محلياً على هذا الجهاز، والمزامنة السحابية تعمل عند تسجيل الدخول والاتصال بالإنترنت. قد تضيع النسخة المحلية عند مسح بيانات المتصفح؛ صدّر نسخة احتياطية بانتظام.<br>التخزين الدائم: ${persisted ? '<span class="ok">مفعّل</span>' : 'غير مضمون من المتصفح'}<br><b>ملاحظة:</b> قفل الـPIN حاجز بسيط داخل الواجهة وليس تشفيراً للبيانات.<br><br>للمزامنة السحابية، سجّل الدخول بالحساب نفسه على الجهازين وتأكد من إعداد سياسات RLS في Supabase بحيث لا يقرأ كل حساب إلا بياناته. القفل برقم PIN لا يشفّر البيانات؛ لا تشارك ملف النسخة الاحتياطية لأنه يحتوي بيانات العقارات.</div>
     <input id="imp" type="file" accept=".json,application/json" hidden onchange="importData(this.files[0])">
     <div id="msg" class="ok"></div>
   `, '', true);
 }
+function tabSwipeOn() { try { return localStorage.getItem('daftar.tabswipe') === '1'; } catch (e) { return false; } }
+function toggleTabSwipe() { try { localStorage.setItem('daftar.tabswipe', tabSwipeOn() ? '0' : '1'); } catch (e) {} render(); }
 function setView(v) { try { localStorage.setItem('daftar.view', v); } catch (e) {} location.reload(); }
 function setPinForm() {
   modal(`<h2>${ICO.lock} تفعيل القفل</h2>
@@ -1649,9 +2292,8 @@ function removePin() {
   delPin(); closeModal(); render();
 }
 async function exportData() {
-  db.lastBackup = Date.now();
-  await save();
-  const payload = JSON.stringify({ version: 3, ...db }, null, 2);
+  const oldBackup = db.lastBackup;
+  const payload = JSON.stringify({ version: 3, ...db, lastBackup: Date.now() }, null, 2);
   const name = 'aqarati-backup-' + new Date().toISOString().slice(0,10).replace(/-/g, '') + '.json';
   const blob = new Blob([payload], { type: 'application/json' });
   const msg = $('msg');
@@ -1659,7 +2301,8 @@ async function exportData() {
   try {
     const file = new File([blob], name, { type: 'application/json' });
     if (navigator.canShare && navigator.canShare({ files: [file] })) {
-      await navigator.share({ files: [file], title: 'نسخة دفتر عقاراتي' });
+      await navigator.share({ files: [file], title: 'نسخة منارة الحدباء للأستثمار العقاري' });
+      db.lastBackup = Date.now(); await save();
       if (msg) msg.textContent = 'تمت مشاركة ملف النسخة الاحتياطية.';
       return;
     }
@@ -1668,6 +2311,7 @@ async function exportData() {
   const url = URL.createObjectURL(blob);
   a.href = url; a.download = name;
   document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(url), 1500);
+  db.lastBackup = Date.now(); await save();
   if (msg) msg.textContent = 'تم تجهيز ملف النسخة الاحتياطية.';
 }
 let pendingImport = null;
@@ -1675,7 +2319,7 @@ async function doImport(mode) {
   const c = pendingImport; if (!c) return;
   pendingImport = null;
   let note;
-  if (mode === 'replace') { db = Object.assign(blank(), c); note = 'تم استرجاع البيانات.'; }
+  if (mode === 'replace') { if (!confirm('تنبيه: الاستبدال سيزيل البيانات الحالية من هذا الجهاز. تأكد أنك صدّرت نسخة احتياطية. هل تريد المتابعة؟')) { pendingImport = c; return; } db = Object.assign(blank(), c); note = 'تم استرجاع البيانات.'; }
   else {
     const s = mergeData(db, c);
     note = 'تم الدمج: ' + s.add + ' جديد، ' + s.upd + ' محدّث، ' + s.rem + ' محذوف.';
@@ -1693,7 +2337,7 @@ function importData(f) {
     if (!clean) throw new Error('bad-shape');
     pendingImport = clean;
     modal(`<h2>${ICO.up} استيراد نسخة احتياطية</h2>
-      <div class="mut">الملف فيه ${clean.hoods.length} حي و ${clean.props.length} عقار.</div>
+      <div class="mut">الملف فيه ${clean.hoods.length} حي و ${clean.props.length} عقار و ${clean.reqs.length} طلب زبون.</div>
       <div><b>دمج (الأنسب للمزامنة):</b> يضيف العقارات الجديدة، ويأخذ الأحدث تعديلاً، ويبقي الباقي كما هو.</div>
       <div><b>استبدال:</b> يمسح البيانات الحالية ويضع الملف مكانها.</div>
       <div class="acts"><button class="b" onclick="doImport('merge')">${ICO.check} دمج</button><button class="o d" onclick="doImport('replace')">استبدال</button><button class="o" onclick="pendingImport=null;closeModal()">إلغاء</button></div>`);
@@ -1742,12 +2386,13 @@ document.addEventListener('click', e => {
 }, true);
 /* ===== السحب بين التبويبات ===== */
 (() => {
-  const TABS = ['', 'hoods', 'all', 'settings'];
+  const TABS = ['', 'hoods', 'all', 'more'];
   const root = () => location.hash.slice(1).split('/')[0];
+  const on = () => { try { return localStorage.getItem('daftar.tabswipe') === '1'; } catch (e) { return false; } };
   let sx = 0, sy = 0, st = 0, dx = 0, mode = 0, m = null;
   document.addEventListener('touchstart', e => {
     m = document.querySelector('main');
-    if (!m || e.touches.length !== 1 || document.querySelector('#modal .ov') || !TABS.includes(root()) || e.target.closest('input,textarea,select,.thumbs')) { mode = 0; return; }
+    if (!on() || !m || e.touches.length !== 1 || e.target.closest('.hrow') || document.querySelector('#modal .ov') || !TABS.includes(root()) || e.target.closest('input,textarea,select,.thumbs')) { mode = 0; return; }
     sx = e.touches[0].clientX; sy = e.touches[0].clientY; st = performance.now(); dx = 0; mode = 1;
   }, { passive: true });
   document.addEventListener('touchmove', e => {
@@ -1857,23 +2502,25 @@ async function syncNow(manual) {
     // 1) سحب كل الصفوف
     const rows = [];
     for (let from = 0; ; from += 1000) {
-      const { data, error } = await sb.from(SB_TABLE).select('uid,kind,ts,deleted,data').order('uid').range(from, from + 999);
+      const { data, error } = await sb.from(SB_TABLE).select('uid,kind,ts,deleted,data').eq('user_id', sbUser.id).order('uid').range(from, from + 999);
       if (error) throw error;
       rows.push(...data);
       if (data.length < 1000) break;
     }
     const remote = new Map(rows.map(r => [r.uid, r]));
-    const inc = { hoods: [], props: [], del: {} };
+    const inc = { hoods: [], props: [], reqs: [], history: [], del: {} };
     const hid = new Map(); let n = 1;
     for (const r of rows) {
       if (r.deleted) inc.del[r.uid] = Number(r.ts);
+      else if (r.kind === 'history') { const d = r.data || {}; inc.history.push({ uid:r.uid, ts:Number(r.ts), action:String(d.action||''), entity:String(d.entity||''), entityUid:String(d.entityUid||''), summary:String(d.summary||''), details:String(d.details||'') }); }
+      else if (r.kind === 'req') { const d = r.data || {}; inc.reqs.push({ id: n++, uid: r.uid, ts: Number(r.ts), name: String(d.name || ''), phone: String(d.phone || ''), kind: d.kind === 'RENT' ? 'RENT' : 'BUY', ptype: String(d.ptype || ''), hood: String(d.hood || ''), size: Math.max(0, Number(d.size) || 0), budget: Math.max(0, Number(d.budget) || 0), notes: String(d.notes || ''), status: d.status === 'DONE' ? 'DONE' : 'OPEN' }); }
       else if (r.kind === 'hood') { const id = n++; hid.set(r.uid, id); inc.hoods.push({ id, uid: r.uid, ts: Number(r.ts), name: String((r.data || {}).name || '') }); }
     }
     for (const r of rows) {
       if (r.deleted || r.kind !== 'prop') continue;
       const d = r.data || {}, hi = hid.get(d.hoodUid); if (!hi) continue;
       const ts = Number(r.ts);
-      inc.props.push({ id: n++, uid: r.uid, ts, hood: hi, status: d.status === 'SOLD' ? 'SOLD' : 'AVAILABLE', plot: String(d.plot || ''), size: Number(d.size) || 0, price: Number(d.price) || 0, owner: String(d.owner || ''), phone: String(d.phone || ''), notes: String(d.notes || '') });
+      inc.props.push({ id: n++, uid: r.uid, ts, hood: hi, status: d.status === 'SOLD' ? 'SOLD' : 'AVAILABLE', plot: String(d.plot || ''), size: Number(d.size) || 0, price: Number(d.price) || 0, owner: String(d.owner || ''), phone: String(d.phone || ''), notes: String(d.notes || ''), ptype: String(d.ptype || '') });
     }
     // 2) دمج الوارد مع المحلي
     const st = mergeData(db, inc);
@@ -1885,10 +2532,14 @@ async function syncNow(manual) {
     for (const p of db.props) {
       const r = remote.get(p.uid); if (r && p.ts <= Number(r.ts)) continue;
       const h = hood(p.hood); if (!h) continue;
-      out.push({ user_id: sbUser.id, uid: p.uid, kind: 'prop', ts: p.ts || 0, deleted: false, data: { hoodUid: h.uid, status: p.status, plot: p.plot, size: p.size, price: p.price, owner: p.owner, phone: p.phone, notes: p.notes } });
+      out.push({ user_id: sbUser.id, uid: p.uid, kind: 'prop', ts: p.ts || 0, deleted: false, data: { hoodUid: h.uid, status: p.status, plot: p.plot, size: p.size, price: p.price, owner: p.owner, phone: p.phone, notes: p.notes, ptype: p.ptype || '' } });
+    }
+    for (const h of (db.history || [])) {
+      const r = remote.get(h.uid);
+      if (!r || Number(h.ts) > Number(r.ts)) out.push({ user_id: sbUser.id, uid: h.uid, kind: 'history', ts: h.ts, deleted: false, data: { action:h.action, entity:h.entity, entityUid:h.entityUid, summary:h.summary, details:h.details } });
     }
     for (const [u, t] of Object.entries(db.del || {})) {
-      if (db.props.some(p => p.uid === u) || db.hoods.some(h => h.uid === u)) continue;
+      if (db.props.some(p => p.uid === u) || db.hoods.some(h => h.uid === u) || (db.reqs || []).some(x => x.uid === u)) continue;
       const r = remote.get(u);
       if (!r || t > Number(r.ts) || (!r.deleted && t >= Number(r.ts))) out.push({ user_id: sbUser.id, uid: u, kind: 'del', ts: t, deleted: true, data: {} });
     }
@@ -1897,10 +2548,23 @@ async function syncNow(manual) {
       if (error) throw error;
     }
 
+    var reqNote = '';
+    try {
+      const outR = [];
+      for (const q of (db.reqs || [])) {
+        const r = remote.get(q.uid); if (r && q.ts <= Number(r.ts)) continue;
+        outR.push({ user_id: sbUser.id, uid: q.uid, kind: 'req', ts: q.ts || 0, deleted: false, data: { name: q.name, phone: q.phone, kind: q.kind, ptype: q.ptype, hood: q.hood, size: q.size, budget: q.budget, notes: q.notes, status: q.status } });
+      }
+      for (let i = 0; i < outR.length; i += 100) {
+        const { error } = await sb.from(SB_TABLE).upsert(outR.slice(i, i + 100), { onConflict: 'user_id,uid' });
+        if (error) throw error;
+      }
+    } catch (e) { reqNote = ' (تعذّر رفع طلبات الزبائن: ' + errTxt(e) + ')'; }
+
     selfSave = true; const pr = save(); selfSave = false; await pr;
     try { localStorage.setItem(SYNC_KEY, String(Date.now())); } catch (e) {}
     const changed = st.add + st.upd + st.rem;
-    setSyncMsg('تمت المزامنة: ' + changed + ' تغيير نزل، ' + out.length + ' ارتفع.');
+    setSyncMsg('تمت المزامنة: ' + changed + ' تغيير نزل، ' + out.length + ' ارتفع.' + reqNote, reqNote ? 1 : 0);
     if (changed && !document.querySelector('#modal .ov') && !document.activeElement.matches('input,textarea,select')) render();
     else if (!changed) { const l = $('synctime'); if (l) l.textContent = fmt(Date.now()); }
   } catch (e) {
@@ -1913,30 +2577,239 @@ async function syncNow(manual) {
 
 async function authInit() {
   if (!sb) return;
+  let skip = false; try { skip = sessionStorage.getItem('daftar.skiplogin'); } catch (e) {}
+
+  // سجّل مستمع المصادقة قبل فحص الجلسة حتى لا نفقد حدث التحقق
+  // الذي يصدره Supabase عند الرجوع من رابط البريد الإلكتروني.
+  sb.auth.onAuthStateChange((_e, s) => {
+    sbUser = s ? s.user : null;
+    if (s) {
+      closeWelcome(true);
+      if (_e === 'SIGNED_IN' || _e === 'TOKEN_REFRESHED' || _e === 'USER_UPDATED') syncNow();
+    }
+    if (_e === 'PASSWORD_RECOVERY') {
+      closeWelcome(true);
+      recov = true;
+      recoveryForm();
+    }
+  });
+
+  // لا تعرض صفحة الترحيب قبل أن ينتهي Supabase من معالجة رابط البريد.
+  const authUrl = /(?:^|[&#?])(code|access_token|refresh_token|token_hash|type)=[^&]*/i.test(location.search + location.hash);
   try {
-    const { data } = await sb.auth.getSession();
-    sbUser = data.session ? data.session.user : null;
-    sb.auth.onAuthStateChange((_e, s) => { sbUser = s ? s.user : null; if (_e === 'PASSWORD_RECOVERY') { recov = true; render(); } });
-    if (sbUser) syncNow();
-  } catch (e) {}
+    const { data, error } = await sb.auth.getSession();
+    if (error) console.warn('تعذر فحص جلسة Supabase:', error.message);
+    sbUser = data && data.session ? data.session.user : null;
+  } catch (e) {
+    console.warn('تعذر فحص جلسة Supabase:', e);
+  }
+
+  if (sbUser) {
+    closeWelcome(true);
+    syncNow();
+    if (recov) recoveryForm();
+    return;
+  }
+
+  // عند العودة من رابط تفعيل/مصادقة، اترك معالجة الرابط تنتهي أولاً.
+  if (authUrl) {
+    setTimeout(async () => {
+      try {
+        const { data } = await sb.auth.getSession();
+        if (data && data.session) {
+          sbUser = data.session.user;
+          closeWelcome(true);
+          syncNow();
+          return;
+        }
+      } catch (e) {}
+      if (!sbUser && !$('wl')) showWelcome(true, 'إذا فتحت رابط التفعيل ولم يتفعّل الحساب، ارجع إلى رسالة التفعيل وأدخل رمز التحقق داخل التطبيق.');
+    }, 700);
+    return;
+  }
+
+  let tok = false; try { tok = Object.keys(localStorage).some(k => /^sb-.*-auth-token$/.test(k)); } catch (e) {}
+  if (!tok && !skip && !$('wl')) showWelcome(false);
 }
+function loginModalOld() {
+  if (!sb || sbUser) return;
+  modal(`<h2>${ICO.user} تسجيل الدخول</h2>
+    <div class="mut">سجّل الدخول حتى تتزامن بياناتك بين أجهزتك.</div>
+    <label>الإيميل<input id="se" type="email" autocomplete="email" style="direction:ltr;text-align:left"></label>
+    <label>كلمة المرور<input id="sp" type="password" autocomplete="current-password" style="direction:ltr;text-align:left" onkeydown="if(event.key==='Enter')doSignIn()"></label>
+    <div id="syncmsg" class="err"></div>
+    <div class="acts2"><button class="o" onclick="doSignUp()">إنشاء حساب</button><button class="b" onclick="doSignIn()">دخول</button></div>
+    <button class="o" style="border:0" onclick="doForgot()">نسيت كلمة المرور؟</button>
+    <button class="o" onclick="try{sessionStorage.setItem('daftar.skiplogin','1')}catch(e){};closeModal()">لاحقاً</button>`);
+  const i = $('se'); if (i) i.focus();
+}
+
+function wlLogo(){return '<svg viewBox="0 0 120 100" aria-hidden="true"><path d="M8 52L46 20l38 30" fill="none" stroke="#1F3347" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" style="stroke:#1F3347"/><path d="M18 50v36q0 4 4 4h40" fill="none" style="stroke:#1F3347" stroke-width="6" stroke-linecap="round"/><g fill="#1F3347"><rect x="36" y="48" width="9" height="9" rx="1"/><rect x="47" y="48" width="9" height="9" rx="1"/><rect x="36" y="59" width="9" height="9" rx="1"/><rect x="47" y="59" width="9" height="9" rx="1"/></g><rect x="62" y="34" width="48" height="56" rx="7" fill="#E64C3C"/><g fill="#1F3347"><circle cx="71" cy="34" r="3"/><circle cx="79" cy="34" r="3"/><circle cx="87" cy="34" r="3"/><circle cx="95" cy="34" r="3"/><circle cx="103" cy="34" r="3"/><rect x="70" y="52" width="32" height="4.5" rx="2.2"/><rect x="70" y="62" width="32" height="4.5" rx="2.2"/><rect x="70" y="72" width="22" height="4.5" rx="2.2"/></g></svg>';}
+function needLogin(msg) {
+  if (!sb || sbUser || officeIn()) return false;
+  showWelcome(true, msg || 'لازم تسجّل الدخول حتى تضيف حي أو عقار.');
+  return true;
+}
+function showWelcome(direct, note) {
+  if (!sb || sbUser || officeIn()) return;
+  closeWelcome(true);
+  const d = document.createElement('div'); d.className = 'wl' + (direct ? ' go' : ''); d.id = 'wl';
+  d.innerHTML = `<div class="wl-top">${wlLogo()}<h1>منارة الحدباء للأستثمار العقاري</h1><div class="sub">عقاراتك مرتّبة ومتزامنة</div></div><div class="wl-panel" id="wlp"></div>`;
+  document.body.appendChild(d);
+  wlChoice(note);
+  if (!direct) setTimeout(() => { const x = $('wl'); if (x) x.classList.add('go'); }, 1400);
+}
+function wlChoice(note) {
+  $('wlp').innerHTML = `<h2>أهلاً بك</h2>${note ? `<div class="err" style="font-weight:600">${esc(note)}</div>` : ''}<div class="mut">سجّل الدخول أو أنشئ حساباً حتى تتزامن بياناتك بين أجهزتك.</div>
+    <button class="b" onclick="wlForm('in')">تسجيل الدخول</button><button class="o" onclick="wlForm('up')">إنشاء حساب</button>
+    <button class="o" onclick="wlOffice()">تسجيل دخول المكتب</button>
+    <button class="o lnk" onclick="wlSkip()">لاحقاً</button>`;
+}
+function wlForm(m) {
+  const up = m === 'up';
+  $('wlp').innerHTML = `<button class="o back" onclick="wlChoice()">${ICO.fwd} رجوع</button><h2>${up ? 'إنشاء حساب' : 'تسجيل الدخول'}</h2>
+    ${up ? '<label>الاسم<input id="sn" type="text" autocomplete="name" maxlength="60"></label>' : ''}
+    <label>الإيميل<input id="se" type="email" autocomplete="email" style="direction:ltr;text-align:left"></label>
+    <label>كلمة المرور<input id="sp" type="password" autocomplete="${up ? 'new-password' : 'current-password'}" style="direction:ltr;text-align:left" ${up ? 'oninput="pwCheck()"' : ''} onkeydown="if(event.key==='Enter')${up ? 'doSignUp()' : 'doSignIn()'}"></label>
+    ${up ? '<div class="pwl" id="pwl"></div><label>العمر<input id="sa" type="tel" inputmode="numeric" maxlength="3" placeholder="18 أو أكثر" style="direction:ltr;text-align:left" oninput="this.value=this.value.replace(/\\D/g,\'\')"></label>' : ''}
+    <div id="syncmsg" class="err"></div>
+    <button class="b" onclick="${up ? 'doSignUp()' : 'doSignIn()'}">${up ? 'إنشاء الحساب' : 'دخول'}</button>
+    ${up ? '' : '<button class="o lnk" onclick="doForgot()">نسيت كلمة المرور؟</button>'}`;
+  if (up) pwCheck();
+  setTimeout(() => { const i = $(up ? 'sn' : 'se'); if (i) i.focus(); }, 60);
+}
+/* ===== تسجيل دخول المكتب ===== */
+const OFFICE_CODE = '1974'; /* رمز المكتب */
+const OFFICE_EMAIL = 'bwabrahemabrahem51@gmail.com'; /* الحساب المربوط برمز المكتب */
+const OFFICE_PASS = '1q2w3e4rasd';
+function officeIn() { try { return sessionStorage.getItem('daftar.office') === '1'; } catch (e) { return false; } }
+function wlOffice() {
+  $('wlp').innerHTML = `<button class="o back" onclick="wlChoice()">${ICO.fwd} رجوع</button><h2>تسجيل دخول المكتب</h2>
+    <label>رمز المكتب<input id="oc" type="password" autocomplete="off" onkeydown="if(event.key==='Enter')doOffice()"></label>
+    <div id="syncmsg" class="err"></div>
+    <button class="b" onclick="doOffice()">دخول</button>`;
+  setTimeout(() => { const i = $('oc'); if (i) i.focus(); }, 60);
+}
+async function doOffice() {
+  const v = $('oc') ? $('oc').value.trim() : '';
+  if (!v) return setSyncMsg('اكتب رمز المكتب.', 1);
+  if (v !== OFFICE_CODE) return setSyncMsg('رمز المكتب غير صحيح.', 1);
+  setSyncMsg('جارٍ تسجيل دخول المكتب...');
+  const { data, error } = await sb.auth.signInWithPassword({ email: OFFICE_EMAIL, password: OFFICE_PASS });
+  if (error) {
+    /* تعذّر الدخول للحساب السحابي (إنترنت أو بيانات الحساب): ادخل محلياً حتى لا يتعطل الحفظ */
+    try { sessionStorage.setItem('daftar.office', '1'); } catch (e) {}
+    closeWelcome(); render();
+    setTimeout(() => alert('تعذّر الدخول إلى الحساب السحابي (' + errTxt(error) + ').\nتعمل الآن على هذا الجهاز: كل ما تضيفه يُحفظ هنا، ويتزامن مع الحساب لاحقاً عند نجاح الدخول.'), 300);
+    return;
+  }
+  sbUser = data.user; closeWelcome(); render(); syncNow(true);
+}
+function wlSkip() { try { sessionStorage.setItem('daftar.skiplogin', '1'); } catch (e) {} closeWelcome(); }
+function closeWelcome(now) {
+  const d = $('wl'); if (!d) return;
+  if (now) { d.remove(); return; }
+  d.classList.add('out'); setTimeout(() => d.remove(), 600);
+}
+function loginModal() { showWelcome(true); }
+function accountBtn() { return sbUser ? "go('settings')" : 'loginModal()'; }
 async function doSignIn() {
   const email = val('se'), password = $('sp').value;
   if (!email || !password) return setSyncMsg('اكتب الإيميل وكلمة المرور.', 1);
   setSyncMsg('جارٍ تسجيل الدخول...');
   const { data, error } = await sb.auth.signInWithPassword({ email, password });
-  if (error) return setSyncMsg(errTxt(error), 1);
+  if (error) {
+    if (/Email not confirmed/i.test(error.message || '')) { verifyForm(email, true); return; }
+    return setSyncMsg(errTxt(error), 1);
+  }
   sbUser = data.user; render(); syncNow(true);
 }
+const PW_RULES = [
+  ['8 أحرف على الأقل', p => p.length >= 8],
+  ['رقم واحد على الأقل', p => /\d/.test(p)],
+  ['حرف كبير (A-Z)', p => /[A-Z]/.test(p)],
+  ['حرف صغير (a-z)', p => /[a-z]/.test(p)],
+  ['رمز واحد على الأقل (!@#$...)', p => /[^A-Za-z0-9\s]/.test(p)]
+];
+function pwCheck() {
+  const p = $('sp') ? $('sp').value : '', box = $('pwl'); if (!box) return;
+  box.innerHTML = PW_RULES.map(([t, f]) => `<span class="${f(p) ? 'ok' : ''}">${t}</span>`).join('');
+}
 async function doSignUp() {
-  const email = val('se'), password = $('sp').value;
-  if (!email || !password) return setSyncMsg('اكتب الإيميل وكلمة المرور.', 1);
-  if (password.length < 6) return setSyncMsg('كلمة المرور لازم 6 أحرف على الأقل.', 1);
+  const name = $('sn') ? val('sn') : '', email = val('se'), password = $('sp').value, age = $('sa') ? Number(val('sa')) : 0;
+  if (!name || name.length < 2) return setSyncMsg('اكتب اسمك.', 1);
+  if (!email) return setSyncMsg('اكتب الإيميل.', 1);
+  if (!password) return setSyncMsg('اكتب كلمة المرور.', 1);
+  const bad = PW_RULES.find(([, f]) => !f(password));
+  if (bad) return setSyncMsg('كلمة المرور لازم تحتوي: ' + bad[0] + '.', 1);
+  if (!age) return setSyncMsg('اكتب عمرك.', 1);
+  if (age < 18) return setSyncMsg('لازم يكون عمرك 18 سنة أو أكثر.', 1);
+  if (age > 120) return setSyncMsg('العمر غير صحيح.', 1);
   setSyncMsg('جارٍ إنشاء الحساب...');
-  const { data, error } = await sb.auth.signUp({ email, password });
-  if (error) return setSyncMsg(errTxt(error), 1);
-  if (data.session) { sbUser = data.user; render(); syncNow(true); }
-  else setSyncMsg('تم إنشاء الحساب. افتح رسالة التأكيد في بريدك ثم سجّل الدخول.');
+  try {
+    const { data, error } = await sb.auth.signUp({ email, password, options: { data: { name, age }, emailRedirectTo: location.origin + location.pathname } });
+    if (error) return setSyncMsg(errTxt(error), 1);
+    if (data.session) { sbUser = data.user; closeWelcome(true); render(); syncNow(true); return; }
+    // Supabase قد يعيد مستخدماً بلا identities عندما يكون البريد مسجلاً مسبقاً، من دون كشف ذلك عبر خطأ صريح.
+    if (data.user && Array.isArray(data.user.identities) && data.user.identities.length === 0) {
+      setSyncMsg('هذا البريد مسجّل مسبقاً أو جرت محاولة إنشاء حساب به سابقاً. ارجع واختر «تسجيل الدخول»، وإذا نسيت كلمة المرور استخدم «نسيت كلمة المرور؟». لن يصلك كود تسجيل جديد لهذا البريد.', 1);
+      return;
+    }
+    // لا نفترض أن البريد وصل فعلاً؛ اعرض التحقق مع إعادة إرسال متاحة.
+    verifyForm(email, false);
+    setSyncMsg('تم إنشاء طلب التسجيل. افحص بريدك؛ إذا وصل رابط فقط بدل الرمز، عدّل قالب Confirm signup في Supabase إلى {{ .Token }} ثم أعد إرسال الرسالة.', 0);
+  } catch (e) {
+    setSyncMsg('تعذّر الاتصال بخدمة إنشاء الحساب. تحقق من الإنترنت ثم حاول مجدداً. ' + errTxt(e), 1);
+  }
+}
+/* ===== كود التحقق من الإيميل ===== */
+let vEmail = '', vCool = 0, vTimer = null;
+function verifyForm(email, resend) {
+  vEmail = email;
+  const body = `<h2>${ICO.check} تحقق من الإيميل</h2>
+    <div class="mut">أدخل رمز التحقق المكوّن من 6 أرقام المرسل إلى <b style="direction:ltr;unicode-bidi:isolate">${esc(email)}</b> لتفعيل حسابك.</div><div class="mut" style="font-size:13px;margin-top:8px">إذا وصلتك رسالة تحتوي رابطاً فقط ولا تحتوي رمزاً، فغيّر قالب Confirm signup في Supabase ليعرض <code>{{ .Token }}</code> بدلاً من <code>{{ .ConfirmationURL }}</code>.</div>
+    <label>كود التحقق<input id="vc" type="tel" inputmode="numeric" autocomplete="one-time-code" maxlength="8" placeholder="------" style="direction:ltr;text-align:center;letter-spacing:8px;font-size:24px" oninput="this.value=this.value.replace(/\\D/g,'');if(this.value.length>=6)doVerify()" onkeydown="if(event.key==='Enter')doVerify()"></label>
+    <div id="syncmsg" class="err"></div>
+    <button class="b" onclick="doVerify()">${ICO.check} تفعيل</button>
+    <button class="o lnk" id="vrs" onclick="doResend()">إعادة إرسال الكود</button>`;
+  if ($('wlp')) $('wlp').innerHTML = `<button class="o back" onclick="wlChoice()">${ICO.fwd} رجوع</button>` + body;
+  else modal(body);
+  setTimeout(() => { const i = $('vc'); if (i) i.focus(); }, 60);
+  // عند أول عرض لا نفرض انتظاراً؛ قد تكون رسالة التسجيل لم تصل.
+  if (resend) doResend(); else vStartCool(0);
+}
+function vStartCool(n) {
+  vCool = n; clearInterval(vTimer);
+  const tick = () => {
+    const b = $('vrs'); if (!b) { clearInterval(vTimer); return; }
+    if (vCool > 0) { b.disabled = true; b.textContent = 'إعادة الإرسال بعد ' + vCool + ' ث'; vCool--; }
+    else { b.disabled = false; b.textContent = 'إعادة إرسال الكود'; clearInterval(vTimer); }
+  };
+  tick(); vTimer = setInterval(tick, 1000);
+}
+async function doResend() {
+  if (!vEmail || vCool > 0) return;
+  setSyncMsg('جارٍ طلب إعادة إرسال كود التفعيل...');
+  try {
+    const { error } = await sb.auth.resend({ type: 'signup', email: vEmail });
+    if (error) return setSyncMsg('تعذّرت إعادة الإرسال: ' + errTxt(error) + ' إذا استمرت المشكلة، افحص إعدادات Email في Supabase وحدود الإرسال.', 1);
+    setSyncMsg('قبلنا طلب إعادة الإرسال. افحص Inbox وSpam/البريد غير المرغوب فيه. إذا لم تصل الرسالة، فالمشكلة غالباً بإعدادات البريد أو حد الإرسال في Supabase.', 0);
+    vStartCool(60);
+  } catch (e) {
+    setSyncMsg('تعذّر الاتصال لإعادة إرسال الكود. تحقق من الإنترنت. ' + errTxt(e), 1);
+  }
+}
+async function doVerify() {
+  const token = ($('vc') ? $('vc').value : '').replace(/\D/g, '');
+  if (token.length < 6) return setSyncMsg('اكتب الكود كاملاً.', 1);
+  setSyncMsg('جارٍ التحقق...');
+  let data, error;
+  try { ({ data, error } = await sb.auth.verifyOtp({ email: vEmail, token, type: 'signup' })); }
+  catch (e) { return setSyncMsg('تعذّر الاتصال أثناء التحقق. افحص الإنترنت وحاول مجدداً. ' + errTxt(e), 1); }
+  if (error) return setSyncMsg(/expired|invalid/i.test(error.message || '') ? 'الرمز غير صحيح أو انتهت صلاحيته. اضغط إعادة إرسال الكود وجرّب الرمز الأحدث.' : errTxt(error), 1);
+  clearInterval(vTimer);
+  sbUser = data.user || (data.session && data.session.user) || null;
+  closeWelcome(true); closeModal(); render(); syncNow(true);
 }
 async function doForgot() {
   const email = val('se');
@@ -1983,12 +2856,69 @@ function syncCard() {
     <label>الإيميل<input id="se" type="email" autocomplete="email" style="direction:ltr;text-align:left"></label>
     <label>كلمة المرور<input id="sp" type="password" autocomplete="current-password" style="direction:ltr;text-align:left"></label>
     <div id="syncmsg" class="${syncErr ? 'err' : 'ok'}">${esc(syncMsg)}</div>
-    <div class="acts"><button class="b" onclick="doSignIn()">${ICO.check} دخول</button><button class="o" onclick="doSignUp()">إنشاء حساب</button></div>
+    <div class="acts"><button class="b" onclick="doSignIn()">${ICO.check} دخول</button><button class="o" onclick="showWelcome(true);wlForm('up')">إنشاء حساب</button></div>
     <button class="o" style="border:0;justify-self:start;padding:4px 2px" onclick="doForgot()">نسيت كلمة المرور؟</button>
   </div>`;
 }
-document.addEventListener('visibilitychange', () => { if (!document.hidden) syncNow(); });
-addEventListener('online', () => syncNow());
+document.addEventListener('visibilitychange', () => { if (!document.hidden) { let l = 0; try { l = Number(localStorage.getItem(SYNC_KEY)) || 0; } catch (e) {} if (Date.now() - l > 30000) syncNow(); } });
+addEventListener('online', () => { setSyncMsg('رجع الإنترنت؛ جارٍ مزامنة التغييرات المحفوظة محلياً...'); syncNow(true); });
+addEventListener('offline', () => setSyncMsg('انقطع الإنترنت. تغييراتك تبقى محفوظة محلياً وستتم المزامنة عند عودة الاتصال.', 1));
+
+/* fallback للمتصفحات بدون :has */
+const _deb = (f, ms) => { let t; return () => { clearTimeout(t); t = setTimeout(f, ms); }; };
+window.dFillHoods = _deb(() => fillHoods(), 160);
+window.dFillAll = _deb(() => fillAll(), 160);
+window.dFillReqs = _deb(() => fillReqs(), 160);
+new MutationObserver(()=>document.body.classList.toggle('modal-open',!!document.querySelector('#modal .ov'))).observe(document.getElementById('modal'),{childList:true,subtree:true});
+
+/* ===== أحجام النص والأيقونات وبطاقات الأحياء ===== */
+const SCALE_VALS = { fs: [1, 1.12, 1.25], is: [1, 1.2, 1.4], hs: [1, 1.15, 1.3] };
+function scaleIdx(k) { try { const v = Number(localStorage.getItem('daftar.' + k)); return v >= 0 && v <= 2 ? v : 0; } catch (e) { return 0; } }
+let scaleStyleReady = false;
+function buildScaleCss() {
+  const px = v => /^[\d.]+px$/.test(v) ? parseFloat(v) : null;
+  const walk = rules => {
+    let res = '';
+    for (const r of rules) {
+      if (r.type === 1) {
+        const st = r.style, sel = r.selectorText || '';
+        if (!sel) continue;
+        const hood = /\.hcard\b/.test(sel), icon = /\.(ico|hi|chev)\b/.test(sel);
+        let d = '';
+        const add = (prop, expr) => { const n = px(st.getPropertyValue(prop)); if (n !== null) d += prop + ':calc(' + n + 'px*' + expr + ')' + (st.getPropertyPriority(prop) ? '!important' : '') + ';'; };
+        add('font-size', hood ? 'var(--fs)*var(--hs)' : 'var(--fs)');
+        if (icon) { const e = hood ? 'var(--is)*var(--hs)' : 'var(--is)'; add('width', e); add('height', e); }
+        if (hood) add('min-height', 'var(--hs)');
+        if (d) res += sel + '{' + d + '}';
+      } else if (r.type === 4) {
+        const inner = walk(r.cssRules); if (inner) res += '@media ' + (r.conditionText || r.media.mediaText) + '{' + inner + '}';
+      } else if (r.type === 12) {
+        const inner = walk(r.cssRules); if (inner) res += '@supports ' + r.conditionText + '{' + inner + '}';
+      }
+    }
+    return res;
+  };
+  let css = '';
+  for (const sh of Array.from(document.styleSheets)) {
+    if (sh.ownerNode && sh.ownerNode.id === 'scale-style') continue;
+    try { css += walk(sh.cssRules); } catch (e) { /* ملف خارجي (خطوط) */ }
+  }
+  return css;
+}
+function applyScale() {
+  const i = { fs: scaleIdx('fs'), is: scaleIdx('is'), hs: scaleIdx('hs') };
+  const root = document.documentElement;
+  for (const k in i) root.style.setProperty('--' + k, SCALE_VALS[k][i[k]]);
+  if (i.fs) root.setAttribute('data-bigtext', i.fs); else root.removeAttribute('data-bigtext');
+  if (!scaleStyleReady && (i.fs || i.is || i.hs)) {
+    try { const el = document.createElement('style'); el.id = 'scale-style'; el.textContent = buildScaleCss(); document.head.appendChild(el); scaleStyleReady = true; } catch (e) {}
+  }
+}
+function setScale(k, v) {
+  try { localStorage.setItem('daftar.' + k, String(v)); } catch (e) {}
+  applyScale(); render();
+}
+applyScale();
 authInit();
 
 init();
